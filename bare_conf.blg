@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: bare_conf.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bibliography.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in barcena2015insecurity
+Warning--empty year in barcena2015insecurity
+Warning--empty journal in jeep_vulnerabilty
+Warning--empty journal in smart_thermostat
+
+Done.
+You've used 18 entries,
+            4087 wiz_defined-function locations,
+            961 strings with 12190 characters,
+and the built_in function-call counts, 13318 in all, are:
+= -- 1060
+> -- 279
+< -- 95
++ -- 149
+- -- 47
+* -- 682
+:= -- 2090
+add.period$ -- 44
+call.type$ -- 18
+change.case$ -- 16
+chr.to.int$ -- 234
+cite$ -- 22
+duplicate$ -- 935
+empty$ -- 1154
+format.name$ -- 59
+if$ -- 3078
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 166
+newline$ -- 107
+num.names$ -- 19
+pop$ -- 401
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1003
+stack$ -- 0
+substring$ -- 559
+swap$ -- 728
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 18
+warning$ -- 4
+while$ -- 61
+width$ -- 20
+write$ -- 227
+(There were 4 warnings)

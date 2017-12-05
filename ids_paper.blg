@@ -1,0 +1,82 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ids_paper.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: bibliography.bib
+Warning--I didn't find a database entry for ""
+Warning--no key, author in acsac
+Warning--no key, author in acsac
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty year in barcena2015insecurity
+Warning--no journal in barcena2015insecurity
+Warning--no number and no volume in barcena2015insecurity
+Warning--page numbers missing in both pages and numpages fields in barcena2015insecurity
+Warning--can't use both author and editor fields in Bertino2015
+Warning--empty publisher in chakrabarti2004autopart
+Warning--empty address in chakrabarti2004autopart
+Warning--no journal in dave
+Warning--no number and no volume in dave
+Warning--page numbers missing in both pages and numpages fields in dave
+Warning--empty publisher in ghosh1994credit
+Warning--empty address in ghosh1994credit
+Warning--require articleno with numpages field in Hofmeyr
+Warning--empty year in hp
+Warning--no journal in hp
+Warning--no number and no volume in hp
+Warning--page numbers missing in both pages and numpages fields in hp
+Warning--empty publisher in lane1997sequence
+Warning--empty address in lane1997sequence
+Warning--require articleno with numpages field in Muniswamy-Reddy
+Warning--require articleno with numpages field in Noble
+Warning--empty address in pasquier-socc2017
+Warning--page numbers missing in both pages and numpages fields in pasquier-socc2017
+Warning--empty publisher in valko2008conditional
+Warning--empty address in valko2008conditional
+Warning--page numbers missing in both pages and numpages fields in valko2008conditional
+Warning--empty publisher in warrender1999detecting
+Warning--empty address in warrender1999detecting
+Warning--require articleno with numpages field in Yoon
+You've used 23 entries,
+            5551 wiz_defined-function locations,
+            1479 strings with 21158 characters,
+and the built_in function-call counts, 27834 in all, are:
+= -- 3431
+> -- 909
+< -- 0
++ -- 272
+- -- 646
+* -- 2120
+:= -- 2922
+add.period$ -- 116
+call.type$ -- 23
+change.case$ -- 153
+chr.to.int$ -- 23
+cite$ -- 56
+duplicate$ -- 1999
+empty$ -- 1438
+format.name$ -- 378
+if$ -- 6209
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 95
+newline$ -- 257
+num.names$ -- 183
+pop$ -- 795
+preamble$ -- 1
+purify$ -- 268
+quote$ -- 0
+skip$ -- 547
+stack$ -- 0
+substring$ -- 3108
+swap$ -- 200
+text.length$ -- 678
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 307
+warning$ -- 31
+while$ -- 188
+width$ -- 0
+write$ -- 480
+(There were 32 warnings)

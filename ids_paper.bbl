@@ -1,0 +1,366 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Akoglu, Tong, and Koutra}{Akoglu
+  et~al\mbox{.}}{2015}]%
+        {Akoglu2015}
+\bibfield{author}{\bibinfo{person}{Leman Akoglu}, \bibinfo{person}{Hanghang
+  Tong}, {and} \bibinfo{person}{Danai Koutra}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Graph based anomaly detection and description: a
+  survey}.
+\newblock \bibinfo{journal}{{\em Data Mining and Knowledge Discovery\/}}
+  \bibinfo{volume}{29}, \bibinfo{number}{3} (\bibinfo{date}{01 May}
+  \bibinfo{year}{2015}), \bibinfo{pages}{626--688}.
+\newblock
+\showISSN{1573-756X}
+\showDOI{%
+\url{http://dx.doi.org/10.1007/s10618-014-0365-y}}
+
+
+\bibitem[\protect\citeauthoryear{Barcena and Wueest}{Barcena and Wueest}{}]%
+        {barcena2015insecurity}
+\bibfield{author}{\bibinfo{person}{Mario~Ballano Barcena} {and}
+  \bibinfo{person}{Candid Wueest}.}
+\newblock \showarticletitle{Insecurity in the Internet of Things}.
+\newblock  (\bibinfo{year}{????}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bertino}{Bertino}{2015}]%
+        {Bertino2015}
+\bibfield{author}{\bibinfo{person}{Elisa Bertino}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Data Trustworthiness---Approaches and
+  Research Challenges}}.
+\newblock \bibinfo{publisher}{Springer International Publishing},
+  \bibinfo{address}{Cham}, \bibinfo{pages}{17--25}.
+\newblock
+\showISBNx{978-3-319-17016-9}
+\showDOI{%
+\url{http://dx.doi.org/10.1007/978-3-319-17016-9_2}}
+
+
+\bibitem[\protect\citeauthoryear{Chakrabarti}{Chakrabarti}{2004}]%
+        {chakrabarti2004autopart}
+\bibfield{author}{\bibinfo{person}{Deepayan Chakrabarti}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Autopart: Parameter-free graph partitioning and
+  outlier detection}. In \bibinfo{booktitle}{{\em European Conference on
+  Principles of Data Mining and Knowledge Discovery}}. Springer,
+  \bibinfo{pages}{112--124}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Chandola, Banerjee, and Kumar}{Chandola
+  et~al\mbox{.}}{2009}]%
+        {chandola_anomaly_2009}
+\bibfield{author}{\bibinfo{person}{Varun Chandola}, \bibinfo{person}{Arindam
+  Banerjee}, {and} \bibinfo{person}{Vipin Kumar}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Anomaly {Detection}: {A} {Survey}}.
+\newblock \bibinfo{journal}{{\em ACM Comput. Surv.\/}} \bibinfo{volume}{41},
+  \bibinfo{number}{3} (\bibinfo{date}{July} \bibinfo{year}{2009}),
+  \bibinfo{pages}{15:1--15:58}.
+\newblock
+\showISSN{0360-0300}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/1541880.1541882}}
+
+
+\bibitem[\protect\citeauthoryear{Evans}{Evans}{2011}]%
+        {dave}
+\bibfield{author}{\bibinfo{person}{Dave Evans}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{The Internet of Things How the Next Evolution of
+  the Internet Is Changing Everything}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.cisco.com/c/dam/en_us/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf}},
+   (\bibinfo{date}{Apr} \bibinfo{year}{2011}).
+\newblock
+\newblock
+\shownote{Accessed: 2016-10-01.}
+
+
+\bibitem[\protect\citeauthoryear{Ghosh and Reilly}{Ghosh and Reilly}{1994}]%
+        {ghosh1994credit}
+\bibfield{author}{\bibinfo{person}{Sushmito Ghosh} {and}
+  \bibinfo{person}{Douglas~L Reilly}.} \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Credit card fraud detection with a neural-network}.
+  In \bibinfo{booktitle}{{\em System Sciences, 1994. Proceedings of the
+  Twenty-Seventh Hawaii International Conference on}},
+  Vol.~\bibinfo{volume}{3}. IEEE, \bibinfo{pages}{621--630}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hawkins}{Hawkins}{1980}]%
+        {hawkins}
+\bibfield{author}{\bibinfo{person}{{D. M.} Hawkins}.}
+  \bibinfo{year}{1980}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Identification of outliers}}.
+\newblock \bibinfo{publisher}{Chapman and Hall}, \bibinfo{address}{London
+  [u.a.]}.
+\newblock
+\showISBNx{041221900X}
+\showURL{%
+\url{http://gso.gbv.de/DB=2.1/CMD?ACT=SRCHA&SRT=YOP&IKT=1016&TRM=ppn+02435757X&sourceid=fbw_bibsonomy}}
+
+
+\bibitem[\protect\citeauthoryear{Hodge and Austin}{Hodge and Austin}{2004}]%
+        {hodge_survey_2004}
+\bibfield{author}{\bibinfo{person}{Victoria Hodge} {and} \bibinfo{person}{Jim
+  Austin}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{A {Survey} of {Outlier} {Detection}
+  {Methodologies}}.
+\newblock \bibinfo{journal}{{\em Artificial Intelligence Review\/}}
+  \bibinfo{volume}{22}, \bibinfo{number}{2} (\bibinfo{date}{Oct.}
+  \bibinfo{year}{2004}), \bibinfo{pages}{85--126}.
+\newblock
+\showISSN{0269-2821, 1573-7462}
+\showDOI{%
+\url{http://dx.doi.org/10.1023/B:AIRE.0000045502.10941.a9}}
+
+
+\bibitem[\protect\citeauthoryear{Hofmeyr, Forrest, and Somayaji}{Hofmeyr
+  et~al\mbox{.}}{1998}]%
+        {Hofmeyr}
+\bibfield{author}{\bibinfo{person}{Steven~A. Hofmeyr},
+  \bibinfo{person}{Stephanie Forrest}, {and} \bibinfo{person}{Anil Somayaji}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Intrusion Detection Using Sequences of System
+  Calls}.
+\newblock \bibinfo{journal}{{\em J. Comput. Secur.\/}} \bibinfo{volume}{6},
+  \bibinfo{number}{3} (\bibinfo{date}{Aug.} \bibinfo{year}{1998}),
+  \bibinfo{pages}{151--180}.
+\newblock
+\showISSN{0926-227X}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=1298081.1298084}}
+
+
+\bibitem[\protect\citeauthoryear{HP}{HP}{}]%
+        {hp}
+\bibfield{author}{\bibinfo{person}{HP}.}
+\newblock \showarticletitle{Internet of things research study}.
+\newblock  (\bibinfo{year}{????}).
+\newblock
+\showURL{%
+\url{http://h20195.www2.hpe.com/V4/getpdf.aspx/4aa5-4759enn}}
+
+
+\bibitem[\protect\citeauthoryear{Lane, Brodley, et~al\mbox{.}}{Lane
+  et~al\mbox{.}}{1997}]%
+        {lane1997sequence}
+\bibfield{author}{\bibinfo{person}{Terran Lane}, \bibinfo{person}{Carla~E
+  Brodley}, {and} \bibinfo{person}{others}.} \bibinfo{year}{1997}\natexlab{}.
+\newblock \showarticletitle{Sequence matching and learning in anomaly detection
+  for computer security}. In \bibinfo{booktitle}{{\em AAAI Workshop: AI
+  Approaches to Fraud Detection and Risk Management}}. \bibinfo{pages}{43--49}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Liao and Vemuri}{Liao and Vemuri}{2002}]%
+        {liao_using_2002}
+\bibfield{author}{\bibinfo{person}{Yihua Liao} {and} \bibinfo{person}{V.~Rao
+  Vemuri}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Using {Text} {Categorization} {Techniques} for
+  {Intrusion} {Detection}}. In \bibinfo{booktitle}{{\em Proceedings of the 11th
+  {USENIX} {Security} {Symposium}}}. \bibinfo{publisher}{USENIX Association},
+  \bibinfo{address}{Berkeley, CA, USA}, \bibinfo{pages}{51--59}.
+\newblock
+\showISBNx{978-1-931971-00-3}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=647253.720290}}
+
+
+\bibitem[\protect\citeauthoryear{Manzoor, Milajerdi, and Akoglu}{Manzoor
+  et~al\mbox{.}}{2016}]%
+        {manzoor_fast_2016}
+\bibfield{author}{\bibinfo{person}{Emaad Manzoor}, \bibinfo{person}{Sadegh~M.
+  Milajerdi}, {and} \bibinfo{person}{Leman Akoglu}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Fast {Memory}-efficient {Anomaly} {Detection} in
+  {Streaming} {Heterogeneous} {Graphs}}. In \bibinfo{booktitle}{{\em
+  Proceedings of the 22Nd {ACM} {SIGKDD} {International} {Conference} on
+  {Knowledge} {Discovery} and {Data} {Mining}}} {\em (\bibinfo{series}{{KDD}
+  '16})}. \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{1035--1044}.
+\newblock
+\showISBNx{978-1-4503-4232-2}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/2939672.2939783}}
+
+
+\bibitem[\protect\citeauthoryear{Muniswamy-Reddy, Holland, Braun, and
+  Seltzer}{Muniswamy-Reddy et~al\mbox{.}}{2006}]%
+        {Muniswamy-Reddy}
+\bibfield{author}{\bibinfo{person}{Kiran-Kumar Muniswamy-Reddy},
+  \bibinfo{person}{David~A. Holland}, \bibinfo{person}{Uri Braun}, {and}
+  \bibinfo{person}{Margo Seltzer}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Provenance-aware Storage Systems}. In
+  \bibinfo{booktitle}{{\em Proceedings of the Annual Conference on USENIX '06
+  Annual Technical Conference}} {\em (\bibinfo{series}{ATEC '06})}.
+  \bibinfo{publisher}{USENIX Association}, \bibinfo{address}{Berkeley, CA,
+  USA}, \bibinfo{pages}{4--4}.
+\newblock
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=1267359.1267363}}
+
+
+\bibitem[\protect\citeauthoryear{Noble and Cook}{Noble and Cook}{2003}]%
+        {Noble}
+\bibfield{author}{\bibinfo{person}{Caleb~C. Noble} {and}
+  \bibinfo{person}{Diane~J. Cook}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Graph-based Anomaly Detection}. In
+  \bibinfo{booktitle}{{\em Proceedings of the Ninth ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}} {\em
+  (\bibinfo{series}{KDD '03})}. \bibinfo{publisher}{ACM}, \bibinfo{address}{New
+  York, NY, USA}, \bibinfo{pages}{631--636}.
+\newblock
+\showISBNx{1-58113-737-0}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/956750.956831}}
+
+
+\bibitem[\protect\citeauthoryear{Papadimitriou, Dasdan, and
+  Garcia-Molina}{Papadimitriou et~al\mbox{.}}{2010}]%
+        {Papadimitriou2010}
+\bibfield{author}{\bibinfo{person}{Panagiotis Papadimitriou},
+  \bibinfo{person}{Ali Dasdan}, {and} \bibinfo{person}{Hector Garcia-Molina}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Web graph similarity for anomaly detection}.
+\newblock \bibinfo{journal}{{\em Journal of Internet Services and
+  Applications\/}} \bibinfo{volume}{1}, \bibinfo{number}{1} (\bibinfo{date}{01
+  May} \bibinfo{year}{2010}), \bibinfo{pages}{19--30}.
+\newblock
+\showISSN{1869-0238}
+\showDOI{%
+\url{http://dx.doi.org/10.1007/s13174-010-0003-x}}
+
+
+\bibitem[\protect\citeauthoryear{Pasquier, Han, Goldstein, Moyer, Eyers,
+  Seltzer, and Bacon}{Pasquier et~al\mbox{.}}{2017}]%
+        {pasquier-socc2017}
+\bibfield{author}{\bibinfo{person}{Thomas Pasquier}, \bibinfo{person}{Xueyuan
+  Han}, \bibinfo{person}{Mark Goldstein}, \bibinfo{person}{Thomas Moyer},
+  \bibinfo{person}{David Eyers}, \bibinfo{person}{Margo Seltzer}, {and}
+  \bibinfo{person}{Jean Bacon}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Practical Whole-System Provenance Capture}. In
+  \bibinfo{booktitle}{{\em Symposium on Cloud Computing
+  (SoCC{\textquoteright}17)}}. ACM, \bibinfo{publisher}{ACM}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Valko, Cooper, Seybert, Visweswaran, Saul, and
+  Hauskrecht}{Valko et~al\mbox{.}}{2008}]%
+        {valko2008conditional}
+\bibfield{author}{\bibinfo{person}{Michal Valko}, \bibinfo{person}{Gregory
+  Cooper}, \bibinfo{person}{Amy Seybert}, \bibinfo{person}{Shyam Visweswaran},
+  \bibinfo{person}{Melissa Saul}, {and} \bibinfo{person}{Milos Hauskrecht}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Conditional anomaly detection methods for
+  patient--management alert systems}. In \bibinfo{booktitle}{{\em Proceedings
+  of the... International Conference on Machine Learning. International
+  Conference on Machine Learning}}, Vol.~\bibinfo{volume}{2008}. NIH Public
+  Access.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Warrender, Forrest, and Pearlmutter}{Warrender
+  et~al\mbox{.}}{1999}]%
+        {warrender1999detecting}
+\bibfield{author}{\bibinfo{person}{Christina Warrender},
+  \bibinfo{person}{Stephanie Forrest}, {and} \bibinfo{person}{Barak
+  Pearlmutter}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{Detecting intrusions using system calls:
+  Alternative data models}. In \bibinfo{booktitle}{{\em Security and Privacy,
+  1999. Proceedings of the 1999 IEEE Symposium on}}. IEEE,
+  \bibinfo{pages}{133--145}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Yoon, Mohan, Choi, Christodorescu, and
+  Sha}{Yoon et~al\mbox{.}}{2017}]%
+        {Yoon}
+\bibfield{author}{\bibinfo{person}{Man-Ki Yoon}, \bibinfo{person}{Sibin Mohan},
+  \bibinfo{person}{Jaesik Choi}, \bibinfo{person}{Mihai Christodorescu}, {and}
+  \bibinfo{person}{Lui Sha}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Learning Execution Contexts from System Call
+  Distribution for Anomaly Detection in Smart Embedded System}. In
+  \bibinfo{booktitle}{{\em Proceedings of the Second International Conference
+  on Internet-of-Things Design and Implementation}} {\em
+  (\bibinfo{series}{IoTDI '17})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{191--196}.
+\newblock
+\showISBNx{978-1-4503-4966-6}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/3054977.3054999}}
+
+
+\bibitem[\protect\citeauthoryear{Zakon}{Zakon}{2012}]%
+        {acsac}
+\bibfield{editor}{\bibinfo{person}{Robert~H'obbes' Zakon}} (Ed.).
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em 28th Annual Computer Security Applications
+  Conference, {ACSAC} 2012, Orlando, FL, USA, 3-7 December 2012}}.
+  \bibinfo{publisher}{{ACM}}.
+\newblock
+\showISBNx{978-1-4503-1312-4}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=2420950}}
+
+
+\bibitem[\protect\citeauthoryear{Zhang, Meratnia, and Havinga}{Zhang
+  et~al\mbox{.}}{2010}]%
+        {zhang_outlier_2010}
+\bibfield{author}{\bibinfo{person}{Y. Zhang}, \bibinfo{person}{N. Meratnia},
+  {and} \bibinfo{person}{P. Havinga}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Outlier {Detection} {Techniques} for {Wireless}
+  {Sensor} {Networks}: {A} {Survey}}.
+\newblock \bibinfo{journal}{{\em IEEE Communications Surveys Tutorials\/}}
+  \bibinfo{volume}{12}, \bibinfo{number}{2} (\bibinfo{year}{2010}),
+  \bibinfo{pages}{159--170}.
+\newblock
+\showISSN{1553-877X}
+\showDOI{%
+\url{http://dx.doi.org/10.1109/SURV.2010.021510.00088}}
+
+
+\end{thebibliography}

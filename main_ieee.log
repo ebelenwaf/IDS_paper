@@ -1,0 +1,1293 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 OCT 2017 01:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main_ieee.tex
+(./main_ieee.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+\c@definition=\count94
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count95
+\c@ALG@rem=\count96
+\c@ALG@nested=\count97
+\ALG@tlm=\skip44
+\ALG@thistlm=\skip45
+\c@ALG@Lnr=\count98
+\c@ALG@blocknr=\count99
+\c@ALG@storecount=\count100
+\c@ALG@tmpcounter=\count101
+\ALG@tmplength=\skip46
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 144.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+)
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen128
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen129
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count103
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count104
+\leftroot@=\count105
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count106
+\DOTSCASE@=\count107
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen130
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count108
+\c@MaxMatrixCols=\count109
+\dotsspace@=\muskip10
+\c@parentequation=\count110
+\dspbrk@lvl=\count111
+\tag@help=\toks17
+\row@=\count112
+\column@=\count113
+\maxfields@=\count114
+\andhelp@=\toks18
+\eqnshift@=\dimen131
+\alignsep@=\dimen132
+\tagshift@=\dimen133
+\tagwidth@=\dimen134
+\totwidth@=\dimen135
+\lineht@=\dimen136
+\@envbody=\toks19
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks21
+\footnotemargin=\dimen137
+\c@pp@next@reset=\count115
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (./main_ieee.aux
+
+LaTeX Warning: Label `example' multiply defined.
+
+)
+\openout1 = `main_ieee.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+
+-- Lines per column: 56 (exact).
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count116
+\scratchdimen=\dimen138
+\scratchbox=\box30
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen139
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks23
+)
+LaTeX Info: Redefining \celsius on input line 334.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 334
+.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 334.
+Package gensymb Info: Using \Omega for \ohm on input line 334.
+
+Package gensymb Warning: Not defining \micro.
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(./body.tex
+! Undefined control sequence.
+\b@barcena2015insecurity ->\citeauthoryear 
+                                           {Barcena and Wueest}{Barcena and ...
+l.4 ... implications. \cite{barcena2015insecurity}
+                                                  . In 2010, a sophisticated...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@barcena2015insecurity ->\citeauthoryear 
+                                           {Barcena and Wueest}{Barcena and ...
+l.4 ... implications. \cite{barcena2015insecurity}
+                                                  . In 2010, a sophisticated...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@hp ->\citeauthoryear 
+                        {HP}{HP}{}
+l.4 .... Additionally, Researchers at HP \cite{hp}
+                                                   reviewed 10 popular IoT d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@hp ->\citeauthoryear 
+                        {HP}{HP}{}
+l.4 .... Additionally, Researchers at HP \cite{hp}
+                                                   reviewed 10 popular IoT d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \vbox (badness 4543) has occurred while \output is active []
+
+ [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+! Undefined control sequence.
+\b@hawkins ->\citeauthoryear 
+                             {Hawkins}{Hawkins}{1980}
+l.86 ...d by a different mechanism" \cite{hawkins}
+                                                  . We define an anomaly as ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@hawkins ->\citeauthoryear 
+                             {Hawkins}{Hawkins}{1980}
+l.86 ...d by a different mechanism" \cite{hawkins}
+                                                  . We define an anomaly as ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@ghosh1994credit ->\citeauthoryear 
+                                     {Ghosh and Reilly}{Ghosh and Reilly}{1994}
+l.86 ...for fraud detection \cite{ghosh1994credit}
+                                                  , in health care for the m...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@ghosh1994credit ->\citeauthoryear 
+                                     {Ghosh and Reilly}{Ghosh and Reilly}{1994}
+l.86 ...for fraud detection \cite{ghosh1994credit}
+                                                  , in health care for the m...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@valko2008conditional ->\citeauthoryear 
+                                          {Valko, Cooper, Seybert, Visweswar...
+l.86 ...f patient care \cite{valko2008conditional}
+                                                  , and in computer security...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@valko2008conditional ->\citeauthoryear 
+                                          {Valko, Cooper, Seybert, Visweswar...
+l.86 ...f patient care \cite{valko2008conditional}
+                                                  , and in computer security...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@lane1997sequence ->\citeauthoryear 
+                                      {Lane, Brodley, et\nobreakspace {}al\u...
+l.86 ...{lane1997sequence, warrender1999detecting}
+                                                  . An anomaly often indicat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@lane1997sequence ->\citeauthoryear 
+                                      {Lane, Brodley, et\nobreakspace {}al\u...
+l.86 ...{lane1997sequence, warrender1999detecting}
+                                                  . An anomaly often indicat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@warrender1999detecting ->\citeauthoryear 
+                                            {Warrender, Forrest, and Pearlmu...
+l.86 ...{lane1997sequence, warrender1999detecting}
+                                                  . An anomaly often indicat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@warrender1999detecting ->\citeauthoryear 
+                                            {Warrender, Forrest, and Pearlmu...
+l.86 ...{lane1997sequence, warrender1999detecting}
+                                                  . An anomaly often indicat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@chandola_anomaly_2009 ->\citeauthoryear 
+                                           {Chandola, Banerjee, and Kumar}{C...
+l.123 ...5, hodge_survey_2004, zhang_outlier_2010}
+                                                  . The process of determini...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@chandola_anomaly_2009 ->\citeauthoryear 
+                                           {Chandola, Banerjee, and Kumar}{C...
+l.123 ...5, hodge_survey_2004, zhang_outlier_2010}
+                                                  . The process of determini...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Akoglu2015 ->\citeauthoryear 
+                                {Akoglu, Tong, and Koutra}{Akoglu et\nobreak...
+l.123 ...5, hodge_survey_2004, zhang_outlier_2010}
+                                                  . The process of determini...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Akoglu2015 ->\citeauthoryear 
+                                {Akoglu, Tong, and Koutra}{Akoglu et\nobreak...
+l.123 ...5, hodge_survey_2004, zhang_outlier_2010}
+                                                  . The process of determini...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@hodge_survey_2004 ->\citeauthoryear 
+                                       {Hodge and Austin}{Hodge and Austin}{...
+l.123 ...5, hodge_survey_2004, zhang_outlier_2010}
+                                                  . The process of determini...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@hodge_survey_2004 ->\citeauthoryear 
+                                       {Hodge and Austin}{Hodge and Austin}{...
+l.123 ...5, hodge_survey_2004, zhang_outlier_2010}
+                                                  . The process of determini...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@zhang_outlier_2010 ->\citeauthoryear 
+                                        {Zhang, Meratnia, and Havinga}{Zhang...
+l.123 ...5, hodge_survey_2004, zhang_outlier_2010}
+                                                  . The process of determini...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@zhang_outlier_2010 ->\citeauthoryear 
+                                        {Zhang, Meratnia, and Havinga}{Zhang...
+l.123 ...5, hodge_survey_2004, zhang_outlier_2010}
+                                                  . The process of determini...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 123--124
+[]\OT1/ptm/m/n/10 Detailed in-for-ma-tion on anomaly de-tec-tion tech-niques
+ []
+
+[2]
+! Undefined control sequence.
+\b@Bertino2015 ->\citeauthoryear 
+                                 {Bertino}{Bertino}{2015}
+l.139 ...nce ensures data trust \cite{Bertino2015}
+                                                  . It establishes causality...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Bertino2015 ->\citeauthoryear 
+                                 {Bertino}{Bertino}{2015}
+l.139 ...nce ensures data trust \cite{Bertino2015}
+                                                  . It establishes causality...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@pasquier-socc2017 ->\citeauthoryear 
+                                       {Pasquier, Han, Goldstein, Moyer, Eye...
+l.141 ...{pasquier-socc2017,acsac,Muniswamy-Reddy}
+                                                  . Provenance graph used fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@pasquier-socc2017 ->\citeauthoryear 
+                                       {Pasquier, Han, Goldstein, Moyer, Eye...
+l.141 ...{pasquier-socc2017,acsac,Muniswamy-Reddy}
+                                                  . Provenance graph used fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@acsac ->\citeauthoryear 
+                           {Zakon}{Zakon}{2012}
+l.141 ...{pasquier-socc2017,acsac,Muniswamy-Reddy}
+                                                  . Provenance graph used fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@acsac ->\citeauthoryear 
+                           {Zakon}{Zakon}{2012}
+l.141 ...{pasquier-socc2017,acsac,Muniswamy-Reddy}
+                                                  . Provenance graph used fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Muniswamy-Reddy ->\citeauthoryear 
+                                     {Muniswamy-Reddy, Holland, Braun, and S...
+l.141 ...{pasquier-socc2017,acsac,Muniswamy-Reddy}
+                                                  . Provenance graph used fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Muniswamy-Reddy ->\citeauthoryear 
+                                     {Muniswamy-Reddy, Holland, Braun, and S...
+l.141 ...{pasquier-socc2017,acsac,Muniswamy-Reddy}
+                                                  . Provenance graph used fo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<provenance_graph_2.png, id=15, 958.3002pt x 307.3884pt>
+File: provenance_graph_2.png Graphic file (type png)
+
+<use provenance_graph_2.png>
+Package pdftex.def Info: provenance_graph_2.png used on input line 156.
+(pdftex.def)             Requested size: 252.93939pt x 101.17581pt.
+
+Overfull \hbox (0.93939pt too wide) in paragraph at lines 156--157
+ [] 
+ []
+
+[3 <./provenance_graph_2.png>]
+<sensor_vector.png, id=27, 574.7874pt x 248.6088pt>
+File: sensor_vector.png Graphic file (type png)
+ <use sensor_vector.png>
+Package pdftex.def Info: sensor_vector.png used on input line 314.
+(pdftex.def)             Requested size: 252.94232pt x 122.85876pt.
+
+Overfull \hbox (0.94232pt too wide) in paragraph at lines 314--315
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<graph_sim_2.png, id=28, 570.933pt x 222.1098pt>
+File: graph_sim_2.png Graphic file (type png)
+ <use graph_sim_2.png>
+Package pdftex.def Info: graph_sim_2.png used on input line 340.
+(pdftex.def)             Requested size: 252.94492pt x 122.8623pt.
+
+Overfull \hbox (0.94492pt too wide) in paragraph at lines 340--341
+ [] 
+ []
+
+[4 <./sensor_vector.png> <./graph_sim_2.png>]
+<similarity_5.png, id=37, 847.968pt x 627.3036pt>
+File: similarity_5.png Graphic file (type png)
+ <use similarity_5.png>
+Package pdftex.def Info: similarity_5.png used on input line 364.
+(pdftex.def)             Requested size: 252.94319pt x 180.66904pt.
+
+Overfull \hbox (0.94319pt too wide) in paragraph at lines 364--365
+ [] 
+ []
+
+
+Overfull \hbox (1.39531pt too wide) detected at line 372
+\OML/cmm/m/it/10 sim\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v[]; v[]\OT1/cmr/m/n/10 )
+ = [] = [] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n
+/10 1]
+ []
+
+! Undefined control sequence.
+\b@liao_using_2002 ->\citeauthoryear 
+                                     {Liao and Vemuri}{Liao and Vemuri}{2002}
+l.450 ...quence. Liao et al \cite{liao_using_2002}
+                                                   characterizes a system's ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@liao_using_2002 ->\citeauthoryear 
+                                     {Liao and Vemuri}{Liao and Vemuri}{2002}
+l.450 ...quence. Liao et al \cite{liao_using_2002}
+                                                   characterizes a system's ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Hofmeyr ->\citeauthoryear 
+                             {Hofmeyr, Forrest, and Somayaji}{Hofmeyr et\nob...
+l.450 .... Stephanie forest's group \cite{Hofmeyr}
+                                                   defines a link between th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Hofmeyr ->\citeauthoryear 
+                             {Hofmeyr, Forrest, and Somayaji}{Hofmeyr et\nob...
+l.450 .... Stephanie forest's group \cite{Hofmeyr}
+                                                   defines a link between th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Yoon ->\citeauthoryear 
+                          {Yoon, Mohan, Choi, Christodorescu, and Sha}{Yoon ...
+l.450 ...maly is detected. Yoon et al. \cite{Yoon}
+                                                   developed a technique for...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Yoon ->\citeauthoryear 
+                          {Yoon, Mohan, Choi, Christodorescu, and Sha}{Yoon ...
+l.450 ...maly is detected. Yoon et al. \cite{Yoon}
+                                                   developed a technique for...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[5 <./similarity_5.png>]
+! Undefined control sequence.
+\b@manzoor_fast_2016 ->\citeauthoryear 
+                                       {Manzoor, Milajerdi, and Akoglu}{Manz...
+l.452 ...d. Manzoor et al \cite{manzoor_fast_2016}
+                                                   proposed a centroid based...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@manzoor_fast_2016 ->\citeauthoryear 
+                                       {Manzoor, Milajerdi, and Akoglu}{Manz...
+l.452 ...d. Manzoor et al \cite{manzoor_fast_2016}
+                                                   proposed a centroid based...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Papadimitriou2010 ->\citeauthoryear 
+                                       {Papadimitriou, Dasdan, and Garcia-Mo...
+l.452 ...adimitriou et al \cite{Papadimitriou2010}
+                                                   proposed five similarity ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Papadimitriou2010 ->\citeauthoryear 
+                                       {Papadimitriou, Dasdan, and Garcia-Mo...
+l.452 ...adimitriou et al \cite{Papadimitriou2010}
+                                                   proposed five similarity ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Noble ->\citeauthoryear 
+                           {Noble and Cook}{Noble and Cook}{2003}
+l.452 ...led web content. Noble et al \cite{Noble}
+                                                   proposed two algorithms f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@Noble ->\citeauthoryear 
+                           {Noble and Cook}{Noble and Cook}{2003}
+l.452 ...led web content. Noble et al \cite{Noble}
+                                                   proposed two algorithms f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@chakrabarti2004autopart ->\citeauthoryear 
+                                             {Chakrabarti}{Chakrabarti}{2004}
+l.452 ...{AUTOPART} \cite{chakrabarti2004autopart}
+                                                   consist of nodes with sim...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b@chakrabarti2004autopart ->\citeauthoryear 
+                                             {Chakrabarti}{Chakrabarti}{2004}
+l.452 ...{AUTOPART} \cite{chakrabarti2004autopart}
+                                                   consist of nodes with sim...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (./main_ieee.bbl
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Akoglu, Tong, and Koutra}{Akoglu et~al\...
+l.43         {Akoglu2015}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 55.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 7064) in paragraph at lines 45--56
+[]\OT1/ptm/m/n/8 Leman Akoglu, Hang-hang
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Barcena and Wueest}{Barcena and Wueest}{}
+l.59         {barcena2015insecurity}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Bertino}{Bertino}{2015}
+l.68         {Bertino2015}
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 69--79
+[]\OT1/ptm/m/n/8 Elisa Bertino. 2015.  \OT1/ptm/m/it/8 Data Trustworthiness---
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Chakrabarti}{Chakrabarti}{2004}
+l.82         {chakrabarti2004autopart}
+                                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 83--90
+[]\OT1/ptm/m/n/8 Deepayan Chakrabarti. 2004.  Au-topart:
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Chandola, Banerjee, and Kumar}{Chandola...
+l.94         {chandola_anomaly_2009}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--106
+[]\OT1/ptm/m/n/8 Varun Chan-dola,
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Ghosh and Reilly}{Ghosh and Reilly}{1994}
+l.109         {ghosh1994credit}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Hawkins}{Hawkins}{1980}
+l.120         {hawkins}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--130
+\OT1/ptm/m/n/8 ACT = SRCHA & SRT = YOP & IKT = 1016 & TRM = ppn + 02435757X &
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Hodge and Austin}{Hodge and Austin}{2004}
+l.133         {hodge_survey_2004}
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Hofmeyr, Forrest, and Somayaji}{Hofmeyr...
+l.149         {Hofmeyr}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 151--162
+[]\OT1/ptm/m/n/8 Steven A. Hofmeyr,
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {HP}{HP}{}
+l.165         {hp}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Lane, Brodley, et~al\mbox {.}}{Lane et~...
+l.176         {lane1997sequence}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[6]
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Liao and Vemuri}{Liao and Vemuri}{2002}
+l.186         {liao_using_2002}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Manzoor, Milajerdi, and Akoglu}{Manzoor...
+l.201         {manzoor_fast_2016}
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--215
+[]\OT1/ptm/m/n/8 Emaad Man-zoor,
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Muniswamy-Reddy, Holland, Braun, and Se...
+l.219         {Muniswamy-Reddy}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (16.19829pt too wide) in paragraph at lines 222--231
+[]
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 222--231
+\OT1/ptm/m/n/8 Kiran-Kumar Muniswamy-Reddy, David A. Hol-land, Uri Braun,
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 222--231
+\OT1/ptm/m/it/8 Pro-ceed-ings of the An-nual Con-fer-ence on USENIX '06 An-nual
+
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Noble and Cook}{Noble and Cook}{2003}
+l.234         {Noble}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Papadimitriou, Dasdan, and Garcia-Molin...
+l.250         {Papadimitriou2010}
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--262
+[]
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 252--262
+\OT1/ptm/m/n/8 Panagiotis Pa-padim-itriou, Ali Das-dan, and Hec-tor Garcia-Moli
+na.
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Pasquier, Han, Goldstein, Moyer, Eyers,...
+l.266         {pasquier-socc2017}
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (17.09456pt too wide) in paragraph at lines 270--275
+[]
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Valko, Cooper, Seybert, Visweswaran, Sa...
+l.279         {valko2008conditional}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (9.74257pt too wide) in paragraph at lines 282--290
+[]
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Warrender, Forrest, and Pearlmutter}{Wa...
+l.294         {warrender1999detecting}
+                                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--303
+[]\OT1/ptm/m/n/8 Christina
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Yoon, Mohan, Choi, Christodorescu, and ...
+l.307         {Yoon}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--321
+[]\OT1/ptm/m/n/8 Man-Ki
+ []
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Zakon}{Zakon}{2012}
+l.324         {acsac}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \protect \citeauthoryear 
+                                    {Zhang, Meratnia, and Havinga}{Zhang et~...
+l.338         {zhang_outlier_2010}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 340--350
+[]\OT1/ptm/m/n/8 Y. Zhang, N. Mer-at-nia,
+ []
+
+)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[7
+
+] (./main_ieee.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3928 strings out of 493014
+ 59507 string characters out of 6133351
+ 137142 words of memory out of 5000000
+ 7397 multiletter control sequences out of 15000+600000
+ 42377 words of font info for 88 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,8n,23p,2913b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on main_ieee.pdf (7 pages, 579472 bytes).
+PDF statistics:
+ 102 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+
