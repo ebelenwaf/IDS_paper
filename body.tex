@@ -7,7 +7,7 @@ Over the years, IoT devices have become an essential part of our daily lives in 
 
 
 
- \par Unlike most host-based intrusion detection system which utilize system call frequencies to determine anomalous system events, our approach detects anomalies by leveraging the information flow of sensor events as represented in a provenance graph. Provenance graph captures a comprehensive history of transformations that occurs on a data object during its lifecycle. It offers a way of representing relationships that exist between multiple data objects. This, in turn, can be used to detect system faults or anomalous system events such as malicious intrusions. We propose an approach to identifying anomalous sensor events using provenance graphs. This approach involves the use of a similarity measure to compare observed provenance graphs with provenance graph derived from an application's normal execution. The result of the algorithm generates an anomaly score in which a threshold is set that classifies an observed provenance graph as either anomalous or benign. We evaluate the effectiveness of our approach with a sample IoT application which simulates a climate control system by comparing the false positive, false negative and true positive rate.
+ \par Unlike most host-based intrusion detection system which utilize system call frequencies to determine anomalous system events, our approach detects anomalies by leveraging the information flow of sensor events as represented in a provenance graph. Provenance graph captures a comprehensive history of transformations that occurs on a data object during its lifecycle. It offers a way of representing relationships that exist between multiple data objects. This, in turn, can be used to detect system faults or anomalous system events such as malicious intrusions. We propose an approach to identifying anomalous sensor events using provenance graphs. This approach involves the use of a similarity measure to compare observed provenance graphs with provenance graph derived from an application's normal execution. The result of the algorithm generates an anomaly score in which a threshold is set that classifies an observed provenance graph as either anomalous or benign. We evaluate the effectiveness of our approach with a sample IoT application which simulates a climate control system..
 
 
 
@@ -206,7 +206,7 @@ We formally define a provenance graph as follows:
 
 \begin{definition}
 
-A provenance graph is a directed acyclic graph, $p = (v_i, e_i)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (type, value)$. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y. value$. $V$ consists of the following types: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g. sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An event is data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g. read, update, create, delete). $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
+A provenance graph is a directed acyclic graph, $p = (v_i, e_i)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.label = v_y.label$. $V$ consists of the following types: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g. sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An event is data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g. read, update, create, delete). $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
 
 % A decision point is a logical component of a provenance graph which denotes the evaluation of an action performed on an entity. 
 
@@ -400,7 +400,7 @@ Our method of comparing the similarity of provenance graphs was inspired by an i
 A similarity function measures how identical two provenance graphs are in a vector space. In order to apply a similarity function, we compute a vector representation. In this approach, a provenance graph undergoes dimensionality reduction into an $n$-dimensional vector space where $n$ represents the number of unique edges (global set of edges) contained in the provenance graph set. This representation is used as input to our anomaly detection algorithm. \par Selecting the most appropriate feature from provenance graphs is an important task. We need to utilize features that preserves the order of edges and nodes contained in the provenance graph. Our approach utilizes the occurrence of unique edges contained in both graphs.  
 %\par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node. That is, for two edges to be considered identical, they must contain identical labels and contain identical source and destination nodes. We say two edges $E_x $ and $E_y$ are identical (denoted $E_x \sim E_y$) if $E_x.V_s = E_y.V_s$, $E_x.V_d = E_y.V_d$, and $E_x.label = E_y.label$  
 
-\par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node.That is, two edges $e_x $ and $e_y$ are identical (denoted $e_x \sim e_y$) if $e_x.v_s = e_y.v_s$, $e_x.v_d = e_y.v_d$, and $e_x.label = e_y.label$  
+\par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node. That is, two edges $e_x $ and $e_y$ are similar (denoted $e_x \sim e_y$) if $e_x.v_s \sim e_y.v_s$, $e_x.v_d \sim e_y.v_d$, and $e_x.label = e_y.label$  
 
 %\par In performing our graph to vector space conversion, we define a set of procedures. First, we define our edge identification function as follows: 
 
@@ -503,29 +503,7 @@ Algorithm 1 depicts a formal definition of the graph-based similarity algorithm.
 
 \begin{algorithmic}[1]
 
-
-
-% \SetKwInOut{Input}{Input}
-% \SetKwInOut{Output}{Output}
-
-
 \Procedure{GraphSetToEdgeList}{$P$}
-%\Input{Two nonnegative integers $a$ and $b$}
-%\State $p_i\gets (V, E)$
-%\State $E_i = (V_s, V_d, label)$
-
-%\State $E_P \gets \{E_0,...,E_n\} \mid E_P \in P$ where  $E_{Pi} \neq E_{i+1}, 0 \leq i \geq n$   
-%\State $E_p \gets \{E_0,...,E_n\} \mid E_p \in p$ where  $E_{pi} \neq E_{i+1}, 0 \leq i \geq n$   
-
-
-%\State $V = \{V_0,...V_n\}$
-
-
-%\State $[v_x, v_y] \gets DistinctEdgeFreq(G_x, G_y)$   
-
-
-%\For{$p_i \in P$}
-
 \State \textbf{INPUT: } $P=\{p_0,...,p_n\} \mid p_i\gets (V_i, E_i), 0 \leq i < n.$
 
 \State $E_G \gets \{\}$
@@ -533,9 +511,18 @@ Algorithm 1 depicts a formal definition of the graph-based similarity algorithm.
 \For{$p_i = (V_i, E_i) \in P, 0 \leq i < n$}
 
 \For{$e_j \in E_i$}
+\State \textit{Found} $\gets$ False
 
-\If{$e_j \not\in E_G$}
-\State $E_G = E_G \cup e_j$
+\For{$e_g \in E_G$}
+\If{$e_j \sim e_g$}
+\State \textit{Found} $\gets$ True
+\EndIf
+\EndFor
+
+
+
+\If{\textit{Found} = False}
+\State $E_G \gets E_G \cup e_j$
 \EndIf
 
 \EndFor
@@ -544,16 +531,19 @@ Algorithm 1 depicts a formal definition of the graph-based similarity algorithm.
 \State \textbf{return} $E_G$
 
 \EndProcedure
+
+
+
 \end{algorithmic}
 
 
 \begin{algorithmic}[1]
-\Procedure{GraphtoVector}{$p \gets (V,E), E_G$}
+
+\Procedure{GraphtoVector}{$E, E_G$}
 
 \State $k = |E_G|$
 
 \State $Q[k] \mid Q[i] \gets 0, 0 \leq i < k$
-
 
 \For{$e_j \in E$}
 
@@ -574,7 +564,9 @@ Algorithm 1 depicts a formal definition of the graph-based similarity algorithm.
 \State \textbf{return} $Q$
 
 \EndProcedure
+
 \end{algorithmic}
+
 
 \begin{algorithmic}[1]
 
@@ -634,7 +626,7 @@ This section outlines experimental procedures involved in evaluating our propose
 
 We evaluate our intrusion detection algorithm by implementing an IoT application which simulates a climate control system. Constant irregularities in temperature could have devastating effects on industrial machinery. Climate control systems ensures a proper functional environment for people and machinery. This system consist primarily of a Heating Ventilating and Air Conditioning (HVAC) System which uses temperature, humidity data to regulate environmental conditions within a building. The temperature is set within a bounded limit such that when the temperature exceeds a certain threshold, a cooling phase is activated and the air conditioning is switched on until the temperature decreases below a threshold in which the heating phase is activated in which the heater is turned on.
 
-\par In order to evaluate the effectiveness of our proposed approach, experimental  evaluation was performed on Raspberry Pi 3 with 1 GB of memory running Ubuntu mate. For our implementation of our simulated climate control system, we utilized a publicly available dataset \cite{LANGEVIN201594} which consists of a year's worth of longitudinal data on the thermal conditions, related behaviors, and comfort of twenty-four occupants in a medium-sized building. This dataset consist of temperature, humidity, air velocity, and voltage readings at varied date and time intervals, collected from a total of 24 sensors with a duration of fifteen minutes. We utilize the temperature and humidity data as input to our aforementioned simulation program.
+\par For the implementation of our climate control system, we utilized a publicly available dataset \cite{LANGEVIN201594} which consists of a year's worth of longitudinal data on the thermal conditions, related behaviors, and comfort of twenty-four occupants in a medium-sized building. This dataset consist of temperature, humidity, air velocity generated at  a duration of fifteen minutes. We utilize the temperature and humidity data as input to our aforementioned simulation program. \par We performed experiments to see if we are able to detect anomalous instances in temperature and humidity data. We generate provenance graphs for each week of the year. We compare the provenance graph generated in various weeks to see how they differ using our graph similarity approach (e.g week 1 compared to week 2, week 2 compared to week 3). 
 
 
 
@@ -642,9 +634,22 @@ We evaluate our intrusion detection algorithm by implementing an IoT application
 % To build our knowledge repository, we ran our IoT application executing in a normal environment and the resultant provenance graph produced was stored in Neo4j, a graph database for efficient graph processing. To generate our malicious attack dataset, we simulate a false data injection attack by introducing constant and irregular temperature and values to our original dataset.
 
 
-\subsection{Preliminary Experimental Result}
 
-To build our knowledge repository, we generate provenance graphs for each week contained in a year. We compare the provenance graph generated for various weeks to see how they differ using our graph similarity approach.
+
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=\columnwidth]{figure.png}
+\end{center}
+\caption{Provenance graph comparison of climate control system by week}
+\label{figure}
+\end{figure}
+
+
+Figure \ref{figure} shows a graph of the cosine similarity values generated from the comparison between the provenance graphs by various weeks. Most of the provenance graphs generated are similar (i.e having a cosine similarity of 1). This might be as a result of less variation in temperature change. 
+
+
 
 
 %We evaluate the performance of our proposed algorithms by calculating three performance metrics: false positive, true positive and false negative rate. False positive indicates when an intrusion that does not exist is detected, false negative indicates when the IDS classifies a provenance graph as normal when it is malicious, finally for true positive an IDS classifies a provenance graph as anomalous which is actually an intrusion.  Detection rate, false alarm rate and false negative rate are calculated as follows: 
@@ -675,7 +680,7 @@ Papadimitriou et al \cite{Papadimitriou2010} proposed five similarity algorithms
 
 \section{Summary and Conclusion}
 
-In this paper, we propose an anomaly detection algorithm for detecting anomalous instances of sensor based events in an IoT device using provenance graphs. We implemented and evaluated the functionality of our approach on an IoT application which simulates a climate control system.  Our preliminary results feasible and show promise. We plan on conducting further detailed experiments to identify false positives, true positives, and false negative rates. We also plan on investigating the application of our approach in the automotive domain by understanding how provenance graphs can be used for anomaly detection in vehicular network intrusion.
+In this paper, we propose an anomaly detection algorithm for detecting anomalous instances of sensor based events in an IoT device using provenance graphs. We implemented our approach on an IoT application which simulates a climate control system. We plan on conducting detailed experiments to identify false positives, true positives, and false negative rates. 
 
 
 
