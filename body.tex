@@ -206,7 +206,7 @@ We formally define a provenance graph as follows:
 
 \begin{definition}
 
-A provenance graph is a directed acyclic graph, $p = (v_i, e_i)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.label = v_y.label$. $V$ consists of the following types: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g. sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An event is data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g. read, update, create, delete). $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
+A provenance graph is a directed acyclic graph, $p = (v_i, e_i)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y.value$ . $V$ consists of the following types: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g. sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An event is data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g. read, update, create, delete). $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
 
 % A decision point is a logical component of a provenance graph which denotes the evaluation of an action performed on an entity. 
 
@@ -622,11 +622,10 @@ An anomaly threshold $t$ is a score that defines at what point a provenance grap
 This section outlines experimental procedures involved in evaluating our proposed algorithm. 
 
 
-\subsection{Experimental Setup}
+%\subsection{Experimental Setup}
 
-We evaluate our intrusion detection algorithm by implementing an IoT application which simulates a climate control system. Constant irregularities in temperature could have devastating effects on industrial machinery. Climate control systems ensures a proper functional environment for people and machinery. This system consist primarily of a Heating Ventilating and Air Conditioning (HVAC) System which uses temperature, humidity data to regulate environmental conditions within a building. The temperature is set within a bounded limit such that when the temperature exceeds a certain threshold, a cooling phase is activated and the air conditioning is switched on until the temperature decreases below a threshold in which the heating phase is activated in which the heater is turned on.
-
-\par For the implementation of our climate control system, we utilized a publicly available dataset \cite{LANGEVIN201594} which consists of a year's worth of longitudinal data on the thermal conditions, related behaviors, and comfort of twenty-four occupants in a medium-sized building. This dataset consist of temperature, humidity, air velocity generated at  a duration of fifteen minutes. We utilize the temperature and humidity data as input to our aforementioned simulation program. \par We performed experiments to see if we are able to detect anomalous instances in temperature and humidity data. We generate provenance graphs for each week of the year. We compare the provenance graph generated in various weeks to see how they differ using our graph similarity approach (e.g week 1 compared to week 2, week 2 compared to week 3). 
+\subsection{ Evaluation}
+The experiment evaluation serves as preliminary study to confirm the correctness of our theoretical approach in detecting anomalous instances between provenance graphs. We evaluate our intrusion detection algorithm by implementing an IoT application which simulates a climate control system. Constant irregularities in temperature could have devastating effects on industrial machinery. Climate control systems ensures a proper functional environment for people and machinery. This system consist primarily of a Heating Ventilating and Air Conditioning (HVAC) System which uses temperature, humidity data to regulate environmental conditions within a building. The temperature is set within a bounded limit such that when the temperature exceeds a certain threshold, a cooling phase is activated and the air conditioning is switched on until the temperature decreases below a threshold in which the heating phase is activated in which the heater is turned on. We utilize a publicly available dataset \cite{LANGEVIN201594} which consists of a year's worth of longitudinal data on the thermal conditions, related behaviors, and comfort of twenty-four occupants in a medium-sized building. This dataset consist of temperature, humidity, air velocity generated at  a duration of fifteen minutes. We utilize the temperature and humidity data as input to our aforementioned simulation program. We generate provenance graphs for each week of the year. We compare the provenance graph generated in various weeks to see how they differ using our graph similarity approach (e.g week 1 compared to week 2, week 2 compared to week 3). 
 
 
 
@@ -640,14 +639,14 @@ We evaluate our intrusion detection algorithm by implementing an IoT application
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=\columnwidth]{figure.png}
+\includegraphics[width=\columnwidth]{foo.pdf}
 \end{center}
 \caption{Provenance graph comparison of climate control system by week}
 \label{figure}
 \end{figure}
 
 
-Figure \ref{figure} shows a graph of the cosine similarity values generated from the comparison between the provenance graphs by various weeks. Most of the provenance graphs generated are similar (i.e having a cosine similarity of 1). This might be as a result of less variation in temperature change. 
+Figure \ref{figure} depicts the cosine similarity between provenance graphs generated from the first occupant by preceding weeks. It is worth nothing that the  rapid decline in the graph is as a result of anomalies between the provenance graphs. This might be as a result of rapid variation in temperature change for each week in the given dataset. 
 
 
 
