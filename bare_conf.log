@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 DEC 2017 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 DEC 2017 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,66 +365,50 @@ e
 ] <picture13.pdf, id=10, 366.36874pt x 308.15125pt>
 File: picture13.pdf Graphic file (type pdf)
  <use picture13.pdf>
-Package pdftex.def Info: picture13.pdf used on input line 198.
+Package pdftex.def Info: picture13.pdf used on input line 161.
 (pdftex.def)             Requested size: 252.0pt x 211.9569pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <vector6.pdf, id=11, 1261.71375pt x 663.47874pt>
 File: vector6.pdf Graphic file (type pdf)
  <use vector6.pdf>
-Package pdftex.def Info: vector6.pdf used on input line 222.
+Package pdftex.def Info: vector6.pdf used on input line 226.
 (pdftex.def)             Requested size: 516.0pt x 271.33961pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [2 <./picture13.pdf>]
-Underfull \vbox (badness 1701) has occurred while \output is active []
-
- [3 <./vector6.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 []\OT1/ptm/m/n/10 Figure 2[] dis-plays the vec-tor space con-ver-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 \OT1/ptm/m/n/10 of prove-nance graphs. $[]$, and $[]$ con-sists
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 \OT1/ptm/m/n/10 of ver-tices $\OML/cmm/m/it/10 A; B; E; F; G; I; J; K; M$ \OT1/
 ptm/m/n/10 and edges
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 \OML/cmm/m/it/10 aOBO; wAW; wGB; wDF$\OT1/ptm/m/n/10 . The vec-tor rep-re-sen-t
 a-tion
  []
 
 
-Overfull \hbox (5.5436pt too wide) detected at line 490
+Overfull \hbox (5.5436pt too wide) detected at line 487
 \OML/cmm/m/it/10 sim\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u[]; u[]\OT1/cmr/m/n/10 )
  = [] = [] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n
 /10 1]
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 1033) has occurred while \output is active []
-
- [4]
-<foo.pdf, id=242, 508.46524pt x 399.55524pt>
+[3 <./vector6.pdf>] <foo.pdf, id=239, 508.46524pt x 399.55524pt>
 File: foo.pdf Graphic file (type pdf)
  <use foo.pdf>
-Package pdftex.def Info: foo.pdf used on input line 638.
+Package pdftex.def Info: foo.pdf used on input line 635.
 (pdftex.def)             Requested size: 252.0pt x 198.02736pt.
- [5 <./foo.pdf>])
-(./bare_conf.bbl)
+
+[4 <./foo.pdf>]) (./bare_conf.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -436,15 +420,15 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (./bare_conf.aux) ) 
+[5] (./bare_conf.aux) ) 
 Here is how much of TeX's memory you used:
  3944 strings out of 493014
  59621 string characters out of 6133351
- 144339 words of memory out of 5000000
+ 140339 words of memory out of 5000000
  7416 multiletter control sequences out of 15000+600000
  41862 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,23p,2005b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,23p,2049b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base
 /8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
 10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7
@@ -464,10 +448,10 @@ al/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (6 pages, 348259 bytes).
+Output written on bare_conf.pdf (5 pages, 344590 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
+ 333 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

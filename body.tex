@@ -7,7 +7,10 @@ IoT devices have become an essential part of our daily lives in commercial, indu
 
 
 
- \par Unlike most host-based intrusion detection system which utilize system call frequencies to determine anomalous system events, our approach detects anomalies by leveraging the information flow of sensor events as represented in a provenance graph. Provenance graph captures a comprehensive history of transformations that occurs on a data object during its lifecycle. It offers a way of representing relationships that exist between multiple data objects. This, in turn, can be used to detect system faults or anomalous system events such as malicious intrusions. We propose an approach to identifying anomalous sensor events using provenance graphs. This approach involves the use of a similarity measure to compare observed provenance graphs with provenance graph derived from an application's normal execution. The result is an anomaly score which is  compared with a previously set threshold to classify observed provenance graph as either anomalous or benign. We evaluate the effectiveness of our approach with a sample IoT application which simulates a climate control system.
+% \par Unlike most host-based intrusion detection system which utilize system call frequencies to determine anomalous system events, our approach detects anomalies by leveraging the information flow of sensor events as represented in a provenance graph. Provenance graph captures a comprehensive history of transformations that occurs on a data object during its lifecycle. It offers a way of representing relationships that exist between multiple data objects. This, in turn, can be used to detect system faults or anomalous system events such as malicious intrusions. 
+ 
+ 
+ \par We propose an approach to identifying anomalous sensor events using provenance graphs. This approach involves the use of a similarity measure to compare observed provenance graphs with provenance graph derived from an application's normal execution. The result is an anomaly score which is  compared with a previously set threshold to classify observed provenance graph as either anomalous or benign. We evaluate the effectiveness of our approach with a sample IoT application which simulates a climate control system.
 
 
 
@@ -35,7 +38,7 @@ IoT devices have become an essential part of our daily lives in commercial, indu
 %
 %\end{itemize}
 
-The remaining portion of this paper is organized as follows. In section 2, we discuss background information on anomaly detection and provenance graphs. In section 3, we describe our threat model and assumptions, In section 4, we discuss details of our graph based anomaly detection algorithm. In section 5, we describes our experimental design and evaluation. In section 6 we describe related work on intrusion detection and graph based anomaly detection. Finally, in section 7, we summarize and conclude our findings.
+%The remaining portion of this paper is organized as follows. In section 2, we discuss background information on anomaly detection and provenance graphs. In section 3, we describe our threat model and assumptions, In section 4, we discuss details of our graph based anomaly detection algorithm. In section 5, we describes our experimental design and evaluation. In section 6 we describe related work on intrusion detection and graph based anomaly detection. Finally, in section 7, we summarize and conclude our findings.
 
 
 
@@ -151,8 +154,18 @@ as the history of all activities performed on a data object from its creation to
 %\label{Provenance_graph}
 %\end{figure}
 
+\begin{figure}[h!]
+\begin{center}
+%\includegraphics[width=\columnwidth]{picture11.pdf}
+%\includegraphics[width=\columnwidth]{picture12.pdf}
+\includegraphics[width=\columnwidth]{picture13.pdf}
+\end{center}
+\caption{Components of a provenance graph where nodes represents types (agent, activity, and entity) and edges represents relationship between types}
+\label{Provenance_Sensor}
+\end{figure}
 
-Most provenance collection frameworks developed to track provenance use system level event sequences in an operating system \cite{pasquier-socc2017,acsac,Muniswamy-Reddy}. For most IoT devices, containing limited or no operating system functionality, it is essential to use a provenance collection framework that places less emphasis on an operating system and more emphasis on application level information flow tracking. For our provenance graph generation, we use PAIoT \cite{paiot}, a provenance collection framework which tracks the information flow of sensor based events in an IoT device over its lifecycle. 
+
+Most provenance collection frameworks developed to track provenance use system level event sequences in an operating system \cite{pasquier-socc2017,acsac,Muniswamy-Reddy}. For most IoT devices, containing limited or no operating system functionality, it is essential to use a provenance collection framework that places less emphasis on an operating system and more emphasis on application level information flow tracking. For our provenance graph generation, we use PAIoT \cite{paiot}, a provenance collection framework which tracks the information flow of sensor based events in an IoT device over its lifecycle. We formally define a provenance graph as follows: 
 
 
 %\subsubsection{Provenance-Sensor Model}
@@ -191,18 +204,9 @@ Most provenance collection frameworks developed to track provenance use system l
 %\label{Provenance_Sensor}
 %\end{figure}
 
-\begin{figure}[h!]
-\begin{center}
-%\includegraphics[width=\columnwidth]{picture11.pdf}
-%\includegraphics[width=\columnwidth]{picture12.pdf}
-\includegraphics[width=\columnwidth]{picture13.pdf}
-\end{center}
-\caption{Components of a provenance graph where nodes represents types (agent, activity, and entity) and edges represents relationship between types}
-\label{Provenance_Sensor}
-\end{figure}
 
 
-We formally define a provenance graph as follows:
+
 
 \begin{definition}
 
@@ -228,12 +232,12 @@ A provenance graph is a directed acyclic graph, $P = (V,E)$ where $V$ is a set o
 
 
 %In an IoT application, there exist recurrent design patterns which can be leveraged to understand data flow. This information, can be leveraged to define the expected provenance graph for each application. 
-Many IoT devices implement a control systems in which sensor data is used as an input in a feedback loop to an actuator. The operations of most control systems are regular and predictable. This notion can be leveraged to define an expected provenance graph for each application. 
+Many IoT devices implement a control systems in which sensor data is used as an input in a feedback loop to an actuator. The operations of most control systems are regular and predictable. This notion can be leveraged to define an expected provenance graph for each application. Each iteration of a control loop sequence generates a path in a provenance graph. The nodes contained along the path denote historical event transformations. For example, in a thermostat application, temperature readings generated might be converted from Celsius to Fahrenheit and utilized as feedback to an actuator. We focus on networked connected control system. Network connection opens doors to potential vulnerabilities
 
 
-\par There are two types of control systems: open and closed loop. In open loop control, the system's output is not affected by the conditions (i.e., there is no feedback loop). An example of an open loop control system is a microwave. The timer is manually set to determine when the microwave stops regardless of the condition of its content (e.g., if the food is properly heated). However, in closed loop control, the system's output is used as feedback to influence the input.  An example of a closed loop system is a thermostat in which the temperature serves as output which is also used as an input feedback to regulate the temperature based on a predefined set-point. 
+%\par There are two types of control systems: open and closed loop. In open loop control, the system's output is not affected by the conditions (i.e., there is no feedback loop). An example of an open loop control system is a microwave. The timer is manually set to determine when the microwave stops regardless of the condition of its content (e.g., if the food is properly heated). However, in closed loop control, the system's output is used as feedback to influence the input.  An example of a closed loop system is a thermostat in which the temperature serves as output which is also used as an input feedback to regulate the temperature based on a predefined set-point. 
 
- \par Each iteration of a control loop sequence generates a path in a provenance graph. The nodes contained along the path denote historical event transformations. For example, in a thermostat application, temperature readings generated might be converted from Celsius to Fahrenheit and utilized as feedback to an actuator. We focus on networked connected control system. Network connection opens doors to potential vulnerabilities
+ 
 
 \par The expected regularity of provenance graphs in IoT applications motivate a graph-based approach to anomaly detection. This approach consists of two phase: observation phase, also known as the training phase and the test or detection phase. In the observation phase, the system collects provenance data considered to be a representation of the normal system behavior. In the detection phase,  provenance graph from the observation phase is compared with the provenance graph derived from subsequent observations to determine if an anomaly exists. 
 
@@ -378,11 +382,10 @@ Due to the ubiquitous nature of IoT devices, there are a wide array of vulnerabi
 
 \section{Graph Similarity Anomaly Detection}
 
+A similarity function measures how identical two provenance graphs are in a vector space. In order to apply a similarity function, we need to compute a vector representation. In our approach, a provenance graph undergoes dimensionality reduction into an $n$-dimensional vector space where $n$ represents the number of unique edges (global set of edges) contained in the provenance graph set. This representation is used as input to our anomaly detection algorithm. \par Selecting the most appropriate feature from provenance graphs is an important task. We need to utilize features that preserve the order of edges and nodes contained in the provenance graph. Our approach utilizes the occurrence of unique edges contained in both graphs.  
+%\par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node. That is, for two edges to be considered identical, they must contain identical labels and contain identical source and destination nodes. We say two edges $E_x $ and $E_y$ are identical (denoted $E_x \sim E_y$) if $E_x.V_s = E_y.V_s$, $E_x.V_d = E_y.V_d$, and $E_x.label = E_y.label$  
 
-
-
-
-
+\par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node. That is, two edges $e_x $ and $e_y$ are similar (denoted $e_x \sim e_y$) if $e_x.v_s \sim e_y.v_s$, $e_x.v_d \sim e_y.v_d$, and $e_x.label = e_y.label$  
 
 %\begin{figure}[h!]
 %\begin{center}
@@ -391,12 +394,6 @@ Due to the ubiquitous nature of IoT devices, there are a wide array of vulnerabi
 %\caption{Graph Similarity Approach}
 %\label{graph_similarity}
 %\end{figure}
-
-
-A similarity function measures how identical two provenance graphs are in a vector space. In order to apply a similarity function, we need to compute a vector representation. In our approach, a provenance graph undergoes dimensionality reduction into an $n$-dimensional vector space where $n$ represents the number of unique edges (global set of edges) contained in the provenance graph set. This representation is used as input to our anomaly detection algorithm. \par Selecting the most appropriate feature from provenance graphs is an important task. We need to utilize features that preserve the order of edges and nodes contained in the provenance graph. Our approach utilizes the occurrence of unique edges contained in both graphs.  
-%\par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node. That is, for two edges to be considered identical, they must contain identical labels and contain identical source and destination nodes. We say two edges $E_x $ and $E_y$ are identical (denoted $E_x \sim E_y$) if $E_x.V_s = E_y.V_s$, $E_x.V_d = E_y.V_d$, and $E_x.label = E_y.label$  
-
-\par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node. That is, two edges $e_x $ and $e_y$ are similar (denoted $e_x \sim e_y$) if $e_x.v_s \sim e_y.v_s$, $e_x.v_d \sim e_y.v_d$, and $e_x.label = e_y.label$  
 
 %\par In performing our graph to vector space conversion, we define a set of procedures. First, we define our edge identification function as follows: 
 
@@ -600,9 +597,9 @@ Algorithm 1 depicts a formal definition of the graph-based similarity algorithm.
 
 
 
-\subsubsection{Defining Anomaly Threshold}
-
-An anomaly threshold $t$ is a score that defines at what point a provenance graph contained in the test data is considered anomalous. Ensuring a proper threshold score is used for detection is an important task that requires extensive knowledge of the application domain. The threshold is manually set to a value $t$, which is defined by domain experts. For automatic anomaly threshold detection, one can use prediction methods to define the anomaly score. Prediction techniques are beyond the scope of this paper. 
+%\subsubsection{Defining Anomaly Threshold}
+%
+%An anomaly threshold $t$ is a score that defines at what point a provenance graph contained in the test data is considered anomalous. Ensuring a proper threshold score is used for detection is an important task that requires extensive knowledge of the application domain. The threshold is manually set to a value $t$, which is defined by domain experts. For automatic anomaly threshold detection, one can use prediction methods to define an anomaly score. Prediction techniques are beyond the scope of this paper. 
 
 %\subsubsection{Computational Complexity:}
 %
@@ -666,16 +663,20 @@ Figure \ref{figure} depicts the cosine similarity between provenance graphs gene
 
 \section{Related Work}
 
-There has been a considerable amount of research done on anomaly detection. Most of the work involves the analysis of system call sequence. Liao et al \cite{liao_using_2002} characterizes a system's normal behavior by denoting the frequency of unique system calls which are converted into a vector space representation. A classification algorithm such as $k$-Nearest Neighbors is used to classify the training data set. Stephanie et al \cite{Hofmeyr} defines a link between the human immune system and intrusion detection systems. They develop a normal system behavior repository by analyzing system call sequences of an application. The application's system call sequence is stored in a normal database which is queried during observation where all behaviors are judged. If an application executes a sequence of system calls that are not found in the normal database, a mismatch is recorded. If the mismatch for that application exceeds a threshold, an anomaly is detected. Yoon et al. \cite{Yoon} developed a technique for intrusion detection on embedded systems by analyzing system call frequencies. This is achieved by learning normal system profile of observed patterns in the system call frequency distribution.Their hypothesis is that applications follow a known frequency pattern which is centered around the centroid. Data from the training set is  clustered using k-means which groups legitimate system behavior. Observation at run-time are compared with the clusters in the detection phase, if the incoming observation does not fit into a cluster, it is considered an anomaly. \par Additionally, anomaly detection on graphs has also been explored. Manzoor et al \cite{manzoor_fast_2016} proposed a centroid based clustering anomaly detection for instances of streaming heterogeneous graphs in real time.  This algorithm is able to accommodate incoming edges in real time. 
-%They propose a method of comparing the similarity between heterogeneous graphs by comparing the similarity of two graphs by their relative frequency. Each graphs is represented as a vector known as shingles. Since all of the graph is stored in memory, they also accommodate an efficient representation of the shingles in memory in what is known as streamhash. 
-Papadimitriou et al \cite{Papadimitriou2010} proposed five similarity algorithms for comparing the similarity of web graphs namely signature similarity, vertex/edge vector similarity, vertex ranking,and vertex edge overlap. These algorithm are inspired by document similarity method namely shingling and random projection based method. Nodes represents a webpage and  an anomaly could indicate a missing link (edge) or a web node. Out of the five similarity measures proposed, signature similarity which compares two graphs based on a set of features (signatures) using a scheme known as \textit{simHash} performed the best followed by vector similarity. By comparing instances between snapshot of crawled webpages, this enables the detection of inconsistencies in crawled web content. Noble et al \cite{Noble} proposed two algorithms for anomaly detection in graphs The first approach, looks at unusual substructures in graphs. This is achieved by inverting the subdue score of patterns that occurs frequently in a graph. Subdue is a method for detecting substructures within graphs. The values that produce high scores are flagged as anomalies. The second approach examines unusual subgraphs contained in a graph by iteratively using subdue algorithm to compress the graph. The idea behind this method is that subgraphs containing many common substructures are considered less anomalous than one with less substructures. Some graph approach involve the use of a community-based approach in which dense regions of connected nodes are considered normal and nodes with high sparse regions which do not belong to any community are considered anomalous. \textit{AUTOPART} \cite{chakrabarti2004autopart} consist of nodes with similar neighbors are clustered together and the edges which do not belong to any cluster are considered as an anomaly. To detect communities, it achieves this task by reorganizing the rows and the columns of the adjacency list.
+There has been a considerable amount of research done on anomaly detection most of which involves the analysis of system call sequence. Liao et al \cite{liao_using_2002} characterizes a system's normal behavior by denoting the frequency of unique system calls which are converted into a vector space representation. A classification algorithm such as $k$-Nearest Neighbors was used to classify the training data set. Stephanie et al \cite{Hofmeyr} defines a link between the human immune system and intrusion detection systems. They developed a normal system behavior repository by analyzing system call sequences of an application. The application's system call sequence is stored in a normal database which is queried during observation. If an application executes a sequence of system calls that is not found in the normal database, a mismatch is recorded. If the mismatch for that application exceeds a threshold, an anomaly is detected. Yoon et al. \cite{Yoon} developed a technique for intrusion detection on embedded systems by analyzing system call frequencies. This is achieved by learning normal system profile of observed patterns in the system call frequency distribution.Their hypothesis is that applications follow a known frequency pattern which is centered around the centroid. Data from the training set is  clustered using k-means which groups legitimate system behavior. Observation at run-time are compared with the clusters in the detection phase, if the incoming observation does not fit into a cluster, it is considered an anomaly. Additionally, anomaly detection on graphs has also been explored. Manzoor et al \cite{manzoor_fast_2016} proposed a centroid based clustering anomaly detection for instances of streaming heterogeneous graphs in real time. Papadimitriou et al \cite{Papadimitriou2010} proposed five similarity algorithms for comparing the similarity of web graphs namely signature similarity, vertex/edge vector similarity, vertex ranking,and vertex edge overlap. 
+
+
+%\cite{Noble} proposed two algorithms for anomaly detection in graphs The first approach, looks at unusual substructures in graphs. This is achieved by inverting the subdue score of patterns that occurs frequently in a graph. Subdue is a method for detecting substructures within graphs. The values that produce high scores are flagged as anomalies. The second approach examines unusual subgraphs contained in a graph by iteratively using subdue algorithm to compress the graph. The idea behind this method is that subgraphs containing many common substructures are considered less anomalous than one with less substructures. 
+
+
+%Some graph approach involve the use of a community-based approach in which dense regions of connected nodes are considered normal and nodes with high sparse regions which do not belong to any community are considered anomalous. \textit{AUTOPART} \cite{chakrabarti2004autopart} consist of nodes with similar neighbors are clustered together and the edges which do not belong to any cluster are considered as an anomaly. To detect communities, it achieves this task by reorganizing the rows and the columns of the adjacency list.
 
 % Our approach of graphs similarity is similar to graph kernels and graph edit distance. graph kernels involves measuring the similarity between two graphs, graph edit distance looks at the number of operations required for a graph $G_1$ to be identical to $G_2$. 
 
 
 \section{Summary and Conclusion}
 
-In this paper, we propose an anomaly detection algorithm for detecting anomalous instances of sensor based events in an IoT device using provenance graphs. We implemented our approach on an IoT application which simulates a climate control system. We plan on conducting detailed experiments to identify false positives, true positives, and false negative rates. 
+In this paper, we propose an anomaly detection algorithm for detecting anomalous instances of sensor based events in an IoT device using provenance graphs. We implemented our approach on an IoT application which simulates a climate control system. We plan on conducting detailed experiments to identify false positives, true positives, and false negative rates on other IoT applications. 
 
 
 
