@@ -1,13 +1,13 @@
 \section{Introduction}
 
-Over the years, IoT devices have become an essential part of our daily lives in commercial, industrial, and infrastructure systems. These devices offer immense benefits to consumers by interacting with our physical environment through sensors and actuators which allows device automation thereby improving efficiency. Unfortunately, the proliferation of IoT devices has led to an increase in the number of remotely exploitable vulnerabilities leading to new attack vectors that could have disastrous financial and physical implications \cite{barcena2015insecurity}. In 2015, security researchers demonstrated a vulnerability on the Jeep vehicle which allowed remote control of the digital system over the Internet \cite{jeep_vulnerabilty}. In 2016, researchers discovered a vulnerability that allows internet connected smart thermostats be subject to remote ransomware attacks in which an attacker gains sole control of the thermostat until a fee is paid \cite{smart_thermostat}. These are a few example of some of the potential malicious vulnerabilities that could have devastating long lasting impact on an IoT system. \par Intrusion detection \cite{Lazarevic2005} is the process of discovering malicious exploits that exist in a system (i.e. network, host). One way of detecting an intrusion is by the use of anomaly detection techniques. An anomaly, also referred to as an outlier, is defined as data that deviates from the normal system behavior. This could be indicative of a system fault or that a system has been compromised by a malicious event. Due to the sensitive nature of safety critical systems, detecting current and future malicious attacks is of utmost importance.
+IoT devices have become an essential part of our daily lives in commercial, industrial, and infrastructure systems. These devices offer immense benefits to consumers by interacting with our physical environment through sensors and actuators which allows device automation thereby improving efficiency. Unfortunately, the proliferation of IoT devices has led to an increase in the number of remotely exploitable vulnerabilities leading to new attack vectors that could have disastrous financial and physical implications \cite{barcena2015insecurity}. In 2015, security researchers demonstrated a vulnerability on the Jeep vehicle which allowed remote control of the automotive system over the Internet \cite{jeep_vulnerabilty}. In 2016, researchers discovered a vulnerability that allows internet connected smart thermostats to be subject to remote ransomware attacks in which an attacker gains sole control of the thermostat until a fee is paid \cite{smart_thermostat}. These are a few example of some of the potential malicious vulnerabilities that could have devastating long lasting impact on an IoT system. \par Intrusion detection \cite{Lazarevic2005} is the process of discovering malicious exploits in a system. One way of detecting an intrusion is by the use of anomaly detection techniques. An anomaly, also referred to as an outlier, is data that deviates from the normal system behavior. Anomalies could be indicative of a system fault or that a system has been compromised by a malicious event. Due to the sensitive nature of safety critical systems, detecting malicious attacks is of utmost importance.
 
  
 %\par Sensors and actuators are important components of an IoT device. Sensors detects environmental signals which are relayed as electric or optical output. An actuator on the other hand, performs task specified by a control signal (e.g sensor's signal or manual input). From pacemakers to motor vehicles, IoT devices generate an unprecedented amount  of sensor data, it is important to track the information flow of sensor based events in order to uncover anomalous relationships that exists between sensor based events in an IoT device. In this paper, we motivate the need for IoT device anomaly detection.
 
 
 
- \par Unlike most host-based intrusion detection system which utilize system call frequencies to determine anomalous system events, our approach detects anomalies by leveraging the information flow of sensor events as represented in a provenance graph. Provenance graph captures a comprehensive history of transformations that occurs on a data object during its lifecycle. It offers a way of representing relationships that exist between multiple data objects. This, in turn, can be used to detect system faults or anomalous system events such as malicious intrusions. We propose an approach to identifying anomalous sensor events using provenance graphs. This approach involves the use of a similarity measure to compare observed provenance graphs with provenance graph derived from an application's normal execution. The result of the algorithm generates an anomaly score in which a threshold is set that classifies an observed provenance graph as either anomalous or benign. We evaluate the effectiveness of our approach with a sample IoT application which simulates a climate control system..
+ \par Unlike most host-based intrusion detection system which utilize system call frequencies to determine anomalous system events, our approach detects anomalies by leveraging the information flow of sensor events as represented in a provenance graph. Provenance graph captures a comprehensive history of transformations that occurs on a data object during its lifecycle. It offers a way of representing relationships that exist between multiple data objects. This, in turn, can be used to detect system faults or anomalous system events such as malicious intrusions. We propose an approach to identifying anomalous sensor events using provenance graphs. This approach involves the use of a similarity measure to compare observed provenance graphs with provenance graph derived from an application's normal execution. The result is an anomaly score which is  compared with a previously set threshold to classify observed provenance graph as either anomalous or benign. We evaluate the effectiveness of our approach with a sample IoT application which simulates a climate control system.
 
 
 
@@ -152,7 +152,7 @@ as the history of all activities performed on a data object from its creation to
 %\end{figure}
 
 
-Most provenance collection frameworks developed to track provenance use system level event sequence in an operating system \cite{pasquier-socc2017,acsac,Muniswamy-Reddy}. For most IoT device, containing limited or no operating system functionality, it is essential to use a provenance collection framework that places less emphasis on an operating system and more emphasis on application level information flow tracking. For our provenance graph generation, we use PAIoT \cite{paiot}, a provenance collection framework which tracks the information flow of sensor based event in an IoT device over its lifecycle. 
+Most provenance collection frameworks developed to track provenance use system level event sequences in an operating system \cite{pasquier-socc2017,acsac,Muniswamy-Reddy}. For most IoT devices, containing limited or no operating system functionality, it is essential to use a provenance collection framework that places less emphasis on an operating system and more emphasis on application level information flow tracking. For our provenance graph generation, we use PAIoT \cite{paiot}, a provenance collection framework which tracks the information flow of sensor based events in an IoT device over its lifecycle. 
 
 
 %\subsubsection{Provenance-Sensor Model}
@@ -206,7 +206,7 @@ We formally define a provenance graph as follows:
 
 \begin{definition}
 
-A provenance graph is a directed acyclic graph, $p = (v_i, e_i)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y.value$ . $V$ consists of the following types: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g. sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An event is data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g. read, update, create, delete). $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
+A provenance graph is a directed acyclic graph, $P = (V,E)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y.value$ . Types may take on one of the following: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g. sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g., read, update, create, delete). $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
 
 % A decision point is a logical component of a provenance graph which denotes the evaluation of an action performed on an entity. 
 
@@ -226,13 +226,16 @@ A provenance graph is a directed acyclic graph, $p = (v_i, e_i)$ where $V$ is a 
 \end{figure*}
 
 
-\subsubsection{Defining an IoT application provenance graph}
+
 %In an IoT application, there exist recurrent design patterns which can be leveraged to understand data flow. This information, can be leveraged to define the expected provenance graph for each application. 
-Many IoT device consist of control systems in which sensor data is used as an input in a feedback loop to an actuator. The operations of most control systems are deterministic. This notion can be leveraged to define an expected provenance graph for each application. 
+Many IoT devices implement a control systems in which sensor data is used as an input in a feedback loop to an actuator. The operations of most control systems are regular and predictable. This notion can be leveraged to define an expected provenance graph for each application. 
 
 
-\par There are two types of control systems: open and closed loop control system. In an open loop control system, the system's output is not affected by the conditions (i.e. there are no feedback loop). An example of an open loop control system is a microwave. The timer is manually set to determine when the microwave stops regardless of the condition of its content (e.g. if the food is properly heated). However, in a closed loop control system, the system's output is used as feedback to influence the input.  An example of a closed loop system is a thermostat in which the temperature serves as output which is also used as an input feedback to regulate the temperature based on a predefined set-point. Using feedback as input increases the accuracy of an output. \par Each iteration of the control loop sequence generates a path in a provenance graph. The nodes contained along the path denote historical event transformations. For example, in a thermostat application, temperature readings generated might be converted from Celsius to Fahrenheit and utilized as feedback to an actuator or it could be stored locally or transmitted to a remote location. We focus on networked connected control system. Network connection opens doors to potential vulnerabilities
+\par There are two types of control systems: open and closed loop. In open loop control, the system's output is not affected by the conditions (i.e., there is no feedback loop). An example of an open loop control system is a microwave. The timer is manually set to determine when the microwave stops regardless of the condition of its content (e.g., if the food is properly heated). However, in closed loop control, the system's output is used as feedback to influence the input.  An example of a closed loop system is a thermostat in which the temperature serves as output which is also used as an input feedback to regulate the temperature based on a predefined set-point. 
 
+ \par Each iteration of a control loop sequence generates a path in a provenance graph. The nodes contained along the path denote historical event transformations. For example, in a thermostat application, temperature readings generated might be converted from Celsius to Fahrenheit and utilized as feedback to an actuator. We focus on networked connected control system. Network connection opens doors to potential vulnerabilities
+
+\par The expected regularity of provenance graphs in IoT applications motivate a graph-based approach to anomaly detection. This approach consists of two phase: observation phase, also known as the training phase and the test or detection phase. In the observation phase, the system collects provenance data considered to be a representation of the normal system behavior. In the detection phase,  provenance graph from the observation phase is compared with the provenance graph derived from subsequent observations to determine if an anomaly exists. 
 
 
 
@@ -312,11 +315,7 @@ Many IoT device consist of control systems in which sensor data is used as an in
 %tf-idf weighting scheme provides a vector space representation of documents. To compare the similarity between two documents, we employ the use of  a similarity measure such as cosine similarity, Jaccard similarity or euclidean distance. This similarity measures calculates some form of distance between the two vectors. Cosine similarity has been shown to outperform the rest of the similarity measures in comparing documents.
 
 \subsection{Similarity Metric}
-Similarity metric measures how identical two objects are. It compares the distance between data objects either by measuring the angle between the objects (cosine similarity) or a linear distance between the objects (euclidean distance). Similarity measures are widely used in document retrieval for selecting a query given a list of documents. 
-
-\subsubsection{Cosine similarity}
-
-This is a measure of orientation between the two non-zero vectors. It measures the cosine of the angle between the vectors. Two vectors which are at an angle of 90\degree  have a similarity of 0 while two vectors which are identical (with an angle of 0\degree) have a cosine of 1 and two vectors which are completely opposite (with an angle of 180\degree) have a similarity of -1. Since we are concerned with the similarity of the vectors, we are only concerned with the positive values bounded in [0,1]. To compute the cosine similarity between two vectors, $X$ and $Y$, cosine similarity is:
+Similarity metric is a measure of how identical two objects are for example by measuring the angle between objects (using cosine similarity) or a linear distance (using euclidean distance) between the objects. In this work, we use cosine similarity as our similarity metric. Cosine similarity is a measure of orientation between two non-zero vectors. It measures the cosine of the angle between the vectors. Two vectors which are at an angle of 90\degree  have a similarity of 0, two vectors which are identical (with an angle of 0\degree) have a cosine of 1, and two vectors which are completely opposite (with an angle of 180\degree) have a similarity of -1. Since we are concerned with the similarity of the vectors, we are only concerned with the positive values bounded in [0,1]. To compute the cosine similarity between two vectors, $X$ and $Y$, cosine similarity is:
 
 \[\mathbf{\cos{(\theta)}} = \dfrac{X \cdot  Y}{ \lVert \mathbf{X} \rVert \cdot \lVert \mathbf{Y} \rVert} =\dfrac{\sum_{i}^n X_i Y_i }{\sqrt[]{\sum_{i}^n X_i^2} \sqrt[]{\sum_{i}^n Y_i^2}}  \]
 
@@ -351,12 +350,14 @@ This is a measure of orientation between the two non-zero vectors. It measures t
 
 
 
+%\subsection{Provenance Graph to Vector Space Conversion }
 
+\par Our method of comparing the similarity of provenance graphs was inspired by an information retrieval technique for document retrieval. Given a corpus $D = \{ d_1,..., d_n\}$, and query, $q$, how do we find document(s) $\{d_x,....d_y\}$ which are similar to $q$ and rank them by order of importance. To achieve this, documents contained in the corpus are converted into a vector space representation which allows documents to be ranked based on some similarity metric.
 
 
 
 \section{Threat Model and Assumptions}
-Due to the ubiquitous nature of IoT devices, there are a wide array of vulnerabilities associated with them. It is believed that each application exhibits a unique sequence of events which can be represented as the provenance graph of the application normal data flow. In designing our anomaly detection framework, we expect an attacker's footprint is reflected through the data flow as depicted in the provenance graph. Our algorithm detects attacks such as false data injection, modifications to the application code and the compromise to the integrity of data that exploits information flow of sensor events. 
+Due to the ubiquitous nature of IoT devices, there are a wide array of vulnerabilities associated with them. In designing our anomaly detection framework, we expect an attacker's footprint is reflected through the data flow as depicted in the provenance graph. Our algorithm detects attacks such as false data injection, and the compromise to the integrity of data that exploits information flow of sensor events. 
 
 
 
@@ -377,12 +378,10 @@ Due to the ubiquitous nature of IoT devices, there are a wide array of vulnerabi
 
 \section{Graph Similarity Anomaly Detection}
 
-The expected regularity of provenance graphs in IoT applications motivate a graph-based approach to anomaly detection. This approach consists of two phase: observation phase, also known as the training phase and the test or detection phase. In the observation phase, the system collects provenance data considered to be a representation of the normal system behavior. In the detection phase,  provenance graph from the observation phase is compared with the provenance graph derived from subsequent observations to determine if an anomaly exists. 
 
 
-\subsection{Provenance Graph to Vector Space Conversion }
 
-Our method of comparing the similarity of provenance graphs was inspired by an information retrieval technique for document retrieval. Given a corpus $D = \{ d_1,..., d_n\}$, and query, $q$, how do we find document(s) $\{d_x,....d_y\}$ which are similar to $q$ and rank them by order of importance. To achieve this, documents contained in the corpus are converted into a vector space representation which allows documents to be ranked based on some similarity metric. 
+
 
 
 %\begin{figure}[h!]
@@ -394,10 +393,7 @@ Our method of comparing the similarity of provenance graphs was inspired by an i
 %\end{figure}
 
 
-
-\subsubsection{Provenance Graph Feature Extraction}
-
-A similarity function measures how identical two provenance graphs are in a vector space. In order to apply a similarity function, we compute a vector representation. In this approach, a provenance graph undergoes dimensionality reduction into an $n$-dimensional vector space where $n$ represents the number of unique edges (global set of edges) contained in the provenance graph set. This representation is used as input to our anomaly detection algorithm. \par Selecting the most appropriate feature from provenance graphs is an important task. We need to utilize features that preserves the order of edges and nodes contained in the provenance graph. Our approach utilizes the occurrence of unique edges contained in both graphs.  
+A similarity function measures how identical two provenance graphs are in a vector space. In order to apply a similarity function, we need to compute a vector representation. In our approach, a provenance graph undergoes dimensionality reduction into an $n$-dimensional vector space where $n$ represents the number of unique edges (global set of edges) contained in the provenance graph set. This representation is used as input to our anomaly detection algorithm. \par Selecting the most appropriate feature from provenance graphs is an important task. We need to utilize features that preserve the order of edges and nodes contained in the provenance graph. Our approach utilizes the occurrence of unique edges contained in both graphs.  
 %\par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node. That is, for two edges to be considered identical, they must contain identical labels and contain identical source and destination nodes. We say two edges $E_x $ and $E_y$ are identical (denoted $E_x \sim E_y$) if $E_x.V_s = E_y.V_s$, $E_x.V_d = E_y.V_d$, and $E_x.label = E_y.label$  
 
 \par We provide a means of classifying such edges as identical. To determine identical edges, we utilize a combination of edge labels and source and destination node. That is, two edges $e_x $ and $e_y$ are similar (denoted $e_x \sim e_y$) if $e_x.v_s \sim e_y.v_s$, $e_x.v_d \sim e_y.v_d$, and $e_x.label = e_y.label$  
