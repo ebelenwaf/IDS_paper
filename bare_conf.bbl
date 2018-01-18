@@ -50,14 +50,6 @@ A.~Lazarevic, V.~Kumar, and J.~Srivastava, \emph{Intrusion Detection: A
   \url{https://doi.org/10.1007/0-387-24230-9_2}
 \BIBentrySTDinterwordspacing
 
-\bibitem{hawkins}
-\BIBentryALTinterwordspacing
-D.~Hawkins, \emph{Identification of outliers}, ser. Monographs on applied
-  probability and statistics.\hskip 1em plus 0.5em minus 0.4em\relax London
-  [u.a.]: Chapman and Hall, 1980. [Online]. Available:
-  \url{http://gso.gbv.de/DB=2.1/CMD?ACT=SRCHA&SRT=YOP&IKT=1016&TRM=ppn+02435757X\&sourceid=fbw_bibsonomy}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Bertino2015}
 \BIBentryALTinterwordspacing
 E.~Bertino, \emph{Data Trustworthiness---Approaches and Research
@@ -152,19 +144,12 @@ P.~Papadimitriou, A.~Dasdan, and H.~Garcia-Molina, ``Web graph similarity for
   \url{https://doi.org/10.1007/s13174-010-0003-x}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Noble}
+\bibitem{Xie:2016:UID:2936026.2936232}
 \BIBentryALTinterwordspacing
-C.~C. Noble and D.~J. Cook, ``Graph-based anomaly detection,'' in
-  \emph{Proceedings of the Ninth ACM SIGKDD International Conference on
-  Knowledge Discovery and Data Mining}, ser. KDD '03.\hskip 1em plus 0.5em
-  minus 0.4em\relax New York, NY, USA: ACM, 2003, pp. 631--636. [Online].
-  Available: \url{http://doi.acm.org/10.1145/956750.956831}
+Y.~Xie, D.~Feng, Z.~Tan, and J.~Zhou, ``Unifying intrusion detection and
+  forensic analysis via provenance awareness,'' \emph{Future Gener. Comput.
+  Syst.}, vol.~61, no.~C, pp. 26--36, Aug. 2016. [Online]. Available:
+  \url{http://dx.doi.org/10.1016/j.future.2016.02.005}
 \BIBentrySTDinterwordspacing
-
-\bibitem{chakrabarti2004autopart}
-D.~Chakrabarti, ``Autopart: Parameter-free graph partitioning and outlier
-  detection,'' in \emph{European Conference on Principles of Data Mining and
-  Knowledge Discovery}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2004,
-  pp. 112--124.
 
 \end{thebibliography}

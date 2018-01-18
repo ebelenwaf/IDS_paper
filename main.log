@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 OCT 2017 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 JAN 2018 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1391,113 +1391,145 @@ LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 164.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 164.
-(./body.tex [1.1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdft
-ex.map}
+(./body.tex
+
+Package natbib Warning: Citation `jeep_vulnerabilty' on page 1 undefined on inp
+ut line 3.
+
+
+Package natbib Warning: Citation `smart_thermostat' on page 1 undefined on inpu
+t line 3.
+
+
+Package natbib Warning: Citation `Lazarevic2005' on page 1 undefined on input l
+ine 3.
+
+
+Underfull \vbox (badness 7238) has occurred while \output is active []
+
+ [1.1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<picture13.pdf, id=97, 366.36874pt x 308.15125pt>
+File: picture13.pdf Graphic file (type pdf)
+ <use picture13.pdf>
+Package pdftex.def Info: picture13.pdf used on input line 161.
+(pdftex.def)             Requested size: 241.14749pt x 202.8303pt.
 
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 140.
- [2.2]
-<provenance_graph_2.png, id=128, 958.3002pt x 307.3884pt>
-File: provenance_graph_2.png Graphic file (type png)
 
-<use provenance_graph_2.png>
-Package pdftex.def Info: provenance_graph_2.png used on input line 156.
-(pdftex.def)             Requested size: 252.93939pt x 101.17581pt.
+Package natbib Warning: Citation `paiot' on page 2 undefined on input line 168.
 
-Overfull \hbox (11.7919pt too wide) in paragraph at lines 156--157
- [] 
+
+
+Overfull \hbox (1.29562pt too wide) in paragraph at lines 168--169
+[]\OT1/LinuxLibertineT-TLF/m/n/9 (-20) Most prove-nance col-lec-tion frame-work
+s de-vel-oped to track prove-
  []
 
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 241.
+<vector6.pdf, id=101, 1261.71375pt x 663.47874pt>
+File: vector6.pdf Graphic file (type pdf)
+ <use vector6.pdf>
+Package pdftex.def Info: vector6.pdf used on input line 226.
+(pdftex.def)             Requested size: 506.295pt x 266.2372pt.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 243.
+(Font)              scaled to size 9.0pt on input line 324.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 243.
+(Font)              scaled to size 7.3pt on input line 324.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 243.
-[3.3 <./provenance_graph_2.png>]
-<sensor_vector.png, id=152, 574.7874pt x 248.6088pt>
-File: sensor_vector.png Graphic file (type png)
- <use sensor_vector.png>
-Package pdftex.def Info: sensor_vector.png used on input line 314.
-(pdftex.def)             Requested size: 252.94232pt x 122.85876pt.
-
-Overfull \hbox (11.79483pt too wide) in paragraph at lines 314--315
- [] 
+(Font)              scaled to size 5.5pt on input line 324.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 363.
+ [2.2 <./picture13.pdf>]
+Overfull \hbox (1.81732pt too wide) in paragraph at lines 385--385
+\OT1/LinuxLibertineT-TLF/m/n/9 (-20) A sim-i-lar-ity func-tion mea-sures how id
+en-ti-cal two prove-nance graphs
  []
 
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/bx/n' in size <9> not a
 vailable
 (Font)              Font shape `TS1/LinuxLibertineT-TLF/b/n' tried instead on i
-nput line 330.
+nput line 446.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 330.
+(Font)              scaled to size 9.0pt on input line 446.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/bx/n' in size <7.3> not
  available
 (Font)              Font shape `TS1/LinuxLibertineT-TLF/b/n' tried instead on i
-nput line 330.
+nput line 446.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 7.3pt on input line 330.
+(Font)              scaled to size 7.3pt on input line 446.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/bx/n' in size <5.5> not
  available
 (Font)              Font shape `TS1/LinuxLibertineT-TLF/b/n' tried instead on i
-nput line 330.
+nput line 446.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 5.5pt on input line 330.
-<graph_sim_2.png, id=153, 570.933pt x 222.1098pt>
-File: graph_sim_2.png Graphic file (type png)
- <use graph_sim_2.png>
-Package pdftex.def Info: graph_sim_2.png used on input line 340.
-(pdftex.def)             Requested size: 252.94492pt x 122.8623pt.
+(Font)              scaled to size 5.5pt on input line 446.
 
-Overfull \hbox (11.79742pt too wide) in paragraph at lines 340--341
- [] 
+LaTeX Warning: Reference `prov_vector' on page 3 undefined on input line 462.
+
+
+Overfull \hbox (1.56418pt too wide) in paragraph at lines 462--463
+\OT1/LinuxLibertineT-TLF/m/n/9 (-20) edges $\OML/nxlmi/m/it/9 aOBO; wAW; wGB; w
+DF$\OT1/LinuxLibertineT-TLF/m/n/9 (-20) . The vec-tor rep-re-sen-ta-tion of gra
+phs,
  []
 
-<similarity_5.png, id=156, 847.968pt x 627.3036pt>
-File: similarity_5.png Graphic file (type png)
- <use similarity_5.png>
-Package pdftex.def Info: similarity_5.png used on input line 364.
-(pdftex.def)             Requested size: 252.94319pt x 180.66904pt.
-
-Overfull \hbox (11.7957pt too wide) in paragraph at lines 364--365
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[3.3 <./vector6.pdf>]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 384.
+(Font)              scaled to size 9.0pt on input line 499.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
-[4.4 <./sensor_vector.png> <./graph_sim_2.png>] [5.5 <./similarity_5.png>])
-(./main.bbl
+
+
+Package natbib Warning: Citation `LANGEVIN201594' on page 4 undefined on input 
+line 621.
+
+<foo.pdf, id=342, 508.46524pt x 399.55524pt>
+File: foo.pdf Graphic file (type pdf)
+ <use foo.pdf>
+Package pdftex.def Info: foo.pdf used on input line 635.
+(pdftex.def)             Requested size: 241.14749pt x 189.49806pt.
+
+
+LaTeX Warning: Reference `figure' on page 4 undefined on input line 642.
+
+
+Overfull \hbox (2.00198pt too wide) in paragraph at lines 642--643
+[]\OT1/LinuxLibertineT-TLF/m/n/9 (-20) Figure [] de-picts the co-sine sim-i-lar
+-ity be-tween prove-nance graphs
+ []
+
+[4.4 <./foo.pdf>]) (./main.bbl
 LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 55.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/ot1zi4.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/ot1zi4.fd
 File: ot1zi4.fd 2014/06/22 OT1/zi4 (Inconsolata)
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `zi4' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: There were undefined citations.
 
-) [6.6]
+[5.5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
-
-(./main.aux)
+ (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D4EB22CF0D92F09EB9DD77275D7AC107;3146.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D4EB22CF0D92F09EB9DD77275D7AC107;3146
+(rerunfilecheck)             After:  5BD3722E268CE27CD70E0CAFD74DA892;2314.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1505,46 +1537,65 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  ) 
 Here is how much of TeX's memory you used:
- 18904 strings out of 493014
- 283601 string characters out of 6133351
- 399945 words of memory out of 5000000
- 21536 multiletter control sequences out of 15000+600000
- 117949 words of font info for 397 fonts, out of 8000000 for 9000
+ 18881 strings out of 493014
+ 282885 string characters out of 6133351
+ 401945 words of memory out of 5000000
+ 21539 multiletter control sequences out of 15000+600000
+ 114482 words of font info for 385 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,11n,94p,2922b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-4.enc}
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}{
-/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texl
-ive/2016/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr/local/texlive/
-2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_ehpgim.enc}{/usr/local/texlive/2
-016/texmf-dist/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}{/usr/local/texlive/20
-16/texmf-dist/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{/usr/local/texlive/201
-6/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2016
-/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{/usr/local/texlive/2016/
-texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}</usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertin
-eTI.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLib
-ertineTZ.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/fxlri
--7letters.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/fxlz
-i-7letters.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/fxl
-zi-jv.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/newtx/zxlri.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/newtx/zxlzi.pfb>
-Output written on main.pdf (6 pages, 1046885 bytes).
+ 60i,11n,94p,2044b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{page.6} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{section*.11} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.10} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section.9} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-4.enc}{/
+usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}{/u
+sr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texliv
+e/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_ehpgim.enc}{/usr/local/texlive
+/2016/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr/local/texlive/201
+6/texmf-dist/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}{/usr/local/texlive/2016
+/texmf-dist/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{/usr/local/texlive/2016/
+texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2016/t
+exmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{/usr/local/texlive/2016/te
+xmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}</usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertine
+TZ.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/fxlri-7lett
+ers.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/fxlzi-7let
+ters.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/newtx/zxlri.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/newtx/zxlzi.pfb>
+Output written on main.pdf (5 pages, 753131 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 53421 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 49320 words of extra memory for PDF output out of 51595 (max. 10000000)
 

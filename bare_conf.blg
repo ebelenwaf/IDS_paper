@@ -17,45 +17,45 @@ Warning--empty journal in jeep_vulnerabilty
 Warning--empty journal in smart_thermostat
 
 Done.
-You've used 18 entries,
+You've used 16 entries,
             4087 wiz_defined-function locations,
-            961 strings with 12190 characters,
-and the built_in function-call counts, 13318 in all, are:
-= -- 1060
-> -- 279
-< -- 95
-+ -- 149
+            947 strings with 11835 characters,
+and the built_in function-call counts, 12012 in all, are:
+= -- 961
+> -- 269
+< -- 86
++ -- 141
 - -- 47
-* -- 682
-:= -- 2090
-add.period$ -- 44
-call.type$ -- 18
-change.case$ -- 16
-chr.to.int$ -- 234
-cite$ -- 22
-duplicate$ -- 935
-empty$ -- 1154
+* -- 628
+:= -- 1897
+add.period$ -- 38
+call.type$ -- 16
+change.case$ -- 15
+chr.to.int$ -- 204
+cite$ -- 20
+duplicate$ -- 843
+empty$ -- 1004
 format.name$ -- 59
-if$ -- 3078
+if$ -- 2760
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 166
-newline$ -- 107
-num.names$ -- 19
-pop$ -- 401
+int.to.str$ -- 16
+missing$ -- 152
+newline$ -- 99
+num.names$ -- 17
+pop$ -- 361
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1003
+skip$ -- 897
 stack$ -- 0
-substring$ -- 559
-swap$ -- 728
-text.length$ -- 17
+substring$ -- 488
+swap$ -- 667
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 18
+type$ -- 16
 warning$ -- 4
-while$ -- 61
-width$ -- 20
-write$ -- 227
+while$ -- 55
+width$ -- 18
+write$ -- 208
 (There were 4 warnings)

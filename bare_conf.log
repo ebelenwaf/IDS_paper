@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 DEC 2017 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  18 JAN 2018 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -271,18 +271,18 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./bare_conf.aux)
 \openout1 = `bare_conf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
 
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -299,15 +299,15 @@ LaTeX Font Info:    ... okay on input line 332.
 \makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks25
 )
-LaTeX Info: Redefining \celsius on input line 332.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 332
+LaTeX Info: Redefining \celsius on input line 334.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 334
 .
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 332.
-Package gensymb Info: Using \Omega for \ohm on input line 332.
+LaTeX Info: Redefining \ohm on input line 334.
+Package gensymb Info: Using \Omega for \ohm on input line 334.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -358,57 +358,54 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-(./body.tex [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex
-.map}
+(./body.tex <picture1_edit.pdf, id=1, 367.3725pt x 293.095pt>
+File: picture1_edit.pdf Graphic file (type pdf)
+
+<use picture1_edit.pdf>
+Package pdftex.def Info: picture1_edit.pdf used on input line 87.
+(pdftex.def)             Requested size: 252.0pt x 201.05507pt.
 
 
-] <picture13.pdf, id=10, 366.36874pt x 308.15125pt>
-File: picture13.pdf Graphic file (type pdf)
- <use picture13.pdf>
-Package pdftex.def Info: picture13.pdf used on input line 161.
-(pdftex.def)             Requested size: 252.0pt x 211.9569pt.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<vector6.pdf, id=11, 1261.71375pt x 663.47874pt>
-File: vector6.pdf Graphic file (type pdf)
- <use vector6.pdf>
-Package pdftex.def Info: vector6.pdf used on input line 226.
-(pdftex.def)             Requested size: 516.0pt x 271.33961pt.
- [2 <./picture13.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
-[]\OT1/ptm/m/n/10 Figure 2[] dis-plays the vec-tor space con-ver-sion
- []
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
-\OT1/ptm/m/n/10 of prove-nance graphs. $[]$, and $[]$ con-sists
- []
+]
+<picture13_edit.pdf, id=14, 1282.7925pt x 600.2425pt>
+File: picture13_edit.pdf Graphic file (type pdf)
+ <use picture13_edit.pdf>
+Package pdftex.def Info: picture13_edit.pdf used on input line 152.
+(pdftex.def)             Requested size: 516.0pt x 241.44826pt.
+
+Underfull \vbox (badness 1436) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
-\OT1/ptm/m/n/10 of ver-tices $\OML/cmm/m/it/10 A; B; E; F; G; I; J; K; M$ \OT1/
-ptm/m/n/10 and edges
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
-\OML/cmm/m/it/10 aOBO; wAW; wGB; wDF$\OT1/ptm/m/n/10 . The vec-tor rep-re-sen-t
-a-tion
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (5.5436pt too wide) detected at line 487
-\OML/cmm/m/it/10 sim\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u[]; u[]\OT1/cmr/m/n/10 )
- = [] = [] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n
-/10 1]
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./vector6.pdf>] <foo.pdf, id=239, 508.46524pt x 399.55524pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./picture1_edit.pdf>]
+Underfull \vbox (badness 2951) has occurred while \output is active []
+
+ [3 <./picture13_edit.pdf>] <foo.pdf, id=240, 508.46524pt x 399.55524pt>
 File: foo.pdf Graphic file (type pdf)
  <use foo.pdf>
-Package pdftex.def Info: foo.pdf used on input line 635.
+Package pdftex.def Info: foo.pdf used on input line 682.
 (pdftex.def)             Requested size: 252.0pt x 198.02736pt.
 
-[4 <./foo.pdf>]) (./bare_conf.bbl)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./bare_conf.bbl [4 <./foo.pdf>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -420,35 +417,37 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5] (./bare_conf.aux) ) 
+[5
+
+] (./bare_conf.aux) ) 
 Here is how much of TeX's memory you used:
- 3944 strings out of 493014
- 59621 string characters out of 6133351
- 140339 words of memory out of 5000000
- 7416 multiletter control sequences out of 15000+600000
+ 3947 strings out of 493014
+ 59753 string characters out of 6133351
+ 145387 words of memory out of 5000000
+ 7419 multiletter control sequences out of 15000+600000
  41862 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,23p,2049b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base
-/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (5 pages, 344593 bytes).
+ 38i,11n,23p,1630b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on bare_conf.pdf (5 pages, 336462 bytes).
 PDF statistics:
  333 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams
