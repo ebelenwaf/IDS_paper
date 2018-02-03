@@ -111,7 +111,8 @@
 % The documentation is contained in the cite.sty file itself.
 
 \newtheorem{definition}{Definition}
-\usepackage{algpseudocode}
+%\usepackage{algpseudocode}
+
 
 \usepackage{color}
 \usepackage{gensymb}
@@ -191,7 +192,8 @@
 
 % *** SPECIALIZED LIST PACKAGES ***
 %
-%\usepackage{algorithmic}
+\usepackage{algorithm, algpseudocode}
+\usepackage{algorithmicx}
 % algorithmic.sty was written by Peter Williams and Rogerio Brito.
 % This package provides an algorithmic environment fo describing algorithms.
 % You can use the algorithmic environment in-text or within a figure
@@ -205,6 +207,16 @@
 % Also of interest may be the (relatively newer and more customizable)
 % algorithmicx.sty package by Szasz Janos:
 % http://www.ctan.org/pkg/algorithmicx
+
+%\makeatletter
+%\newcommand\fs@norules{\def\@fs@cfont{\bfseries}\let\@fs@capt\floatc@ruled
+%  \def\@fs@pre{}%
+%  \def\@fs@post{}%
+%  \def\@fs@mid{\kern3pt}%
+%  \let\@fs@iftopcapt\iftrue}
+%\makeatother
+%\floatstyle{norules}
+%\restylefloat{algorithm}
 
 
 
@@ -226,8 +238,9 @@
 % IEEEtran contains the IEEEeqnarray family of commands that can be used to
 % generate multiline equations as well as matrices, tables, etc., of high
 % quality.
+\usepackage{caption}
 
-
+\captionsetup[algorithm]{labelsep=colon}
 
 
 % *** SUBFIGURE PACKAGES ***
@@ -341,7 +354,10 @@
 % Do not put math or special symbols in the title.
 %\title{Towards a Provenance-Aware Internet of Things (IoT) System}
 
-\title{IoT Device Sensor Data Anomaly-based Intrusion Detection using Provenance Graphs}
+%\title{IoT Device Sensor Data Anomaly-based Intrusion Detection using Provenance Graphs}
+\title{Anomaly-based Intrusion Detection of IoT Device Sensor Data using Provenance Graphs}
+
+%A provenance-graph based approach to anomaly-based intrusion detection of sensor data in IoT Devices
 
 %\title{Provenance Graph Based Sensor Data Anomaly Detection in IoT Devices }
 
