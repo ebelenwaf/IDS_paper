@@ -136,7 +136,7 @@ Most provenance collection frameworks developed to track provenance use system l
 %\end{figure}
 
 
-A provenance graph is a directed acyclic graph, $p = (V,E)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$ and $E$ is a set of edges \textcolor{red}{(also known as edge list)} $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y.value$. Two edges $e_x $ and $e_y$ are similar (denoted $e_x \sim e_y$) if $e_x.v_s \sim e_y.v_s$, $e_x.v_d \sim e_y.v_d$, and $e_x.label = e_y.label$. \textcolor{red}{ We define a union operator over a collection of edge set (denoted by $\cup$) as a set of non-similar edges contained in the edge set. For example, assume $E_i$ and $E_j$ are edge lists, $E_i \cup E_j = \{e_i: e_i \in E_i$ or $e_i \in E_j\}$}. Types may take on one of the following: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g., sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g., read, update, create, delete). $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
+A provenance graph is a directed acyclic graph, $p = (V,E)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$ and $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y.value$. Two edges $e_x $ and $e_y$ are similar (denoted $e_x \sim e_y$) if $e_x.v_s \sim e_y.v_s$, $e_x.v_d \sim e_y.v_d$, and $e_x.label = e_y.label$. \textcolor{red}{ We define a union operator over a collection of edge set (denoted by $\cup$) as a set of non-similar edges contained in the edge set. For example, assume $E_i$ and $E_j$ are edge lists, $E_i \cup E_j = \{e_i: e_i \in E_i$ or $e_i \in E_j\}$}. Types may take on one of the following: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g., sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g., read, update, create, delete). $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
 
 % A decision point is a logical component of a provenance graph which denotes the evaluation of an action performed on an entity. 
 
@@ -247,7 +247,7 @@ Algorithm \ref{alg:graph_similarity} describes how to calculate the cosine simil
 
 %Each graph consist of an edge list which contains all edges contained in the provenance graph.
 
-\par In order to apply cosine similarity between provenance graphs, we compute a vector representation which reduces the graph into an $n$-dimensional vector space where $n$ represents the total number of edges contained in the union of all edge sets. Figure \ref{prov_vector} illustrates the vector space conversion of provenance graphs. $\boldsymbol{p_1}$, and $\boldsymbol{p_2}$ which consists of vertices $A,B,E,F,G, I, J, S, R$ and edge labels $aOBO, wAW, wGB, wDB$. \textcolor{red}{The vector space representation of $u_1$ is the occurrence of edges contained in the edge set of graph $p_1$, which  are also found in the collective union of edge sets. Algorithm \ref{graph_to_vector} further illustrates the concept of graph to vector conversion.}
+\par In order to apply cosine similarity between provenance graphs, we compute a vector representation which reduces the graph into an $n$-dimensional vector space where $n$ represents the total number of edges contained in the union of all edge sets. Figure \ref{prov_vector} illustrates the vector space conversion of provenance graphs. $\boldsymbol{p_1}$, and $\boldsymbol{p_2}$ which consists of vertices $A,B,E,F,G, I, J, S, R$ and edge labels $aOBO, wAW, wGB, wDB$. \textcolor{red}{The vector space representation of $u_1$ is the occurrence of edges contained in the edge set of graph $p_1$, which  are also found in the collective union of edge sets. Algorithm \ref{graph_to_vector} further outlines the concept of graph to vector conversion.}
 %The vector representation of $u_1$ is the occurrence of edges contained in the edge list that is found in the global edge list.%
 %\subsubsection{Jaccard Similarity}
 %This similarity measure evaluates the intersection divided by the union of two non zero vectors.
@@ -358,7 +358,12 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 \par Due to the ubiquitous nature of IoT devices, there are a wide array of vulnerabilities associated with them. In designing our anomaly detection framework, we expect an attacker's footprint is reflected through the data flow as depicted in the provenance graph. Our algorithm detects attacks such as false data injection, and state change as depicted in information flow of sensor events in provenance graphs.
 
 \par Many IoT devices implement a control systems in which sensor data is used as an input in a feedback loop to an actuator. The operations of most control systems are regular and predictable. For example, in a thermostat application, temperature readings generated might be converted from Celsius to Fahrenheit and utilized as feedback to an actuator. Each iteration of a control loop sequence generates a path in a provenance graph. This notion can be leveraged to define an expected provenance graph for each application. 
-\par The expected regularity of provenance graphs in IoT applications motivates a supervised learning approach to anomaly detection. This approach consists of two phases: observation phase, also known as the training phase, and the detection or test phase. In the observation phase, the system collects provenance data considered to be a representation of the normal system behavior. In the detection phase, the provenance graph set is compared with the provenance graph derived from subsequent observations to determine if an anomaly exists by measuring similarity between this graph and the provenance graph set. \textcolor{red}{Note that provenance graphs from the observation and detection phase form a graph set. A global edge list, $E_G$ represents the union of edge sets contained in a graph set. Algorithm \ref{alg:graph_anomaly} is the graph anomaly detection function given an observation phase graph set, $P$, and a detection phase graph, $p$. $Z$ represents a list of the cosine scores from comparing each of the provenance graphs in the observation phase graph set. A  function, $checkAnomaly$ is used to determine the minimum cosine similarity score of each element contained in $Z$.}
+\par The expected regularity of provenance graphs in IoT applications motivates a supervised learning approach to anomaly detection. This approach consists of two phases: observation phase, also known as the training phase, and the detection or test phase. In the observation phase, the system collects provenance data considered to be a representation of the normal system behavior. In the detection phase, the provenance graph set is compared with the provenance graph derived from subsequent observations to determine if an anomaly exists by measuring similarity between this graph and the provenance graph set. \textcolor{red}{Note that provenance graphs from the observation and detection phase form a graph set. A global edge set, $E_G$ represents the union of edge sets contained in a graph set. Algorithm \ref{alg:graph_anomaly} is the graph anomaly detection function given an observation phase graph set, $P$, and a detection phase graph, $p$. $Z$ represents a list of the cosine scores from comparing each of the provenance graphs in the observation phase graph set with a detection phase graph. A  function, $calculateAnomalyScore$ is used to determine the anomaly score, which is based on the minimum cosine similarity score of elements contained in $Z$.}
+
+%minimum cosine similarity score of each element contained in $Z$.}
+%
+%
+% it calculated the anomaly score, which is currently based on the minimum cosine similarity in Z.
 
 %Each provenance graph contained in the detection phase is compared to provenance graphs contained in the observation phase with the result being a list of cosine similarity scores $Z$.
 
@@ -486,7 +491,7 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 %\[sim(u_x,u_y) =  \dfrac{u_x \cdot  u_y}{ \lVert \mathbf{u_x} \rVert \cdot \lVert \mathbf{u_y} \rVert} =\dfrac{\sum_{i=1}^n u_{xi} u_{yi} }{\sqrt[]{\sum_{i=1}^n u_{xi}^2} \times \sqrt[]{\sum_{i=1}^n u_{yi}^2}}  \in [0,1] \]
 
 \begin{algorithm}
-\caption{Cosine similarity algorithm given vectors $u_x, u_y$.}
+\caption{Cosine similarity given two vectors.}
  \label{alg:graph_similarity}
  
 \begin{algorithmic}[1]
@@ -517,20 +522,20 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 \end{algorithm}
 
 \begin{algorithm}
-\caption{Algorithm to construct the global edge list}
+\caption{Algorithm to construct the global edge set}
 
 \begin{algorithmic}[1]  
-\caption{Global edge list algorithm given a set of provenance graphs, $P$.}
+\caption{Construction of global edge set from a set of provenance graphs.}
 \label{graph_to_globaledgelist}
 
-\Procedure{GraphSetToGlobalEdgeList}{$P$}
+\Procedure{GraphSetToGlobalEdgeSet}{$P$}
 \State \textbf{INPUT: } $P=\{p_0,...,p_n\} \mid p_i\gets (V_i, E_i), 0 \leq i \leq n.$
 
-\State $E_G \gets \{\}$
-\For{$p_i = (V_i, E_i) \in P, 0 \leq i \leq n$}
-\State \textcolor{red}{$E_G \gets E_G \cup E_i$}
+%\State $E_G \gets \{\}$
+%\For{$p_i = (V_i, E_i) \in P, 0 \leq i \leq n$}
+\State \textcolor{red}{$E_G \gets \cup_{i=0}^{n} E_i$}
 
-\EndFor
+%\EndFor
 \State \textbf{return} $E_G$
 
 \EndProcedure
@@ -576,7 +581,7 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 
 
 \begin{algorithm}[h!]  
-\caption{Graph to vector conversion algorithm.} 
+\caption{Graph to vector conversion.} 
  \label{graph_to_vector} 
 \begin{algorithmic}[1]
 
@@ -610,11 +615,11 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 \end{algorithm}
 
 \begin{algorithm}[h!] 
-\caption{Minimum cosine similarity score algorithm given a set of scores, $Z$.}  
+\caption{Calculates an anomaly score given a set of cosine similarity values.}  
  \label{alg:min_func} 
 \begin{algorithmic}[1]  
 
-\Procedure{checkAnomaly}{$Z$}
+\Procedure{calculateAnomalyScore}{$Z$}
 \State \textbf{INPUT: } $Z=\{z_0,...,z_n\} , 0 \leq i \leq n.$
 \State score $\gets 0.0$
 \For{$z_i \in Z$}
@@ -631,14 +636,14 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 
 \begin{algorithm}[h!]
 
-\caption{Detection algorithm given an observation phase graph set, $P$ and a detection phase graph ,$p$.} 
+\caption{Detection algorithm given an observation phase graph set, $P$, a detection phase graph, $p$, and a $threshold$.} 
  \label{alg:graph_anomaly} 
 
 \begin{algorithmic}[1]  
 
-\Procedure{GraphAnomaly}{$P,p$}
+\Procedure{GraphAnomaly}{$P,p,threshold$}
 
-\State $E_G \gets GraphSetToGlobalEdgeList(P \cup p)$
+\State $E_G \gets GraphSetToGlobalEdgeSet(P \cup p)$
 
 \State $Q \gets GraphtoVector(p, E_G)$ 
 
@@ -649,11 +654,11 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 
 \State $z \gets SIM(Q, N_i)$
 
-\State $Z \cup z_i$
+\State $Z \gets Z \cup z_i$
 
 \EndFor	
 
-\State $s_{val} = checkAnomaly(Z)$
+\State $s_{val} = calculateAnomalyScore(Z)$
 
 \If{ $s_{val} \geq$ threshold}
 \State \textbf{return} normal
@@ -728,11 +733,11 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 The experiment evaluation serves as a preliminary study to confirm the correctness of our theoretical approach in detecting anomalous instances between provenance graphs. We evaluate our intrusion detection algorithm by implementing an IoT application which simulates a climate control system. Climate control systems ensure a proper functional environment for people and machinery. Constant irregularities in temperature could have devastating effects on industrial machinery. This system consists primarily of a heating ventilation and air conditioning (HVAC) system which uses temperature and humidity data to regulate environmental conditions within a building. We utilize a publicly available dataset \cite{LANGEVIN201594} which consists of a year's worth of longitudinal data on the thermal conditions, related behaviors, and comfort of twenty-four occupants in a medium-sized building generated at  a period of fifteen minutes. We utilize the temperature and humidity data as input to our simulation. We generate provenance graphs for each week of the year. We compare the provenance graph generated in consecutive weeks to see how they differ using our graph similarity approach (i.e., week 1 compared to week 2, week 2 compared to week 3 etc.). 
 \par Figure \ref{figure} depicts the cosine similarity between provenance graphs generated from the first occupant by preceding weeks. The rapid decline in the graph is as a result of anomalies between the provenance graphs. This might be as a result of rapid variation in temperature change for each week in the given dataset. \textcolor{red}{Since this dataset does not contain attacks, these spikes would likely be caused by false positives.}
 
-\begin{figure}[h!]
+\begin{figure}[tb]
 \begin{center}
 \includegraphics[width=\columnwidth]{foo.pdf}
 \end{center}
-\caption{Provenance graph comparison of climate control system by week}
+\caption{Provenance graph comparison of climate control system by week.}
 \label{figure}
 \end{figure}
 
@@ -765,7 +770,7 @@ The experiment evaluation serves as a preliminary study to confirm the correctne
 There has been a considerable amount of research done on contextualized event-based anomaly detection of system call sequence. Liao et al \cite{liao_using_2002} characterizes a system's normal behavior by denoting the frequency of unique system calls which are converted into a vector space representation. A classification algorithm such as $k$-Nearest Neighbors was used to classify the training data set. Stephanie et al. \cite{Hofmeyr} defines a human immune system inspired intrusion detection systems analyzing system call sequences of an application. Yoon et al. \cite{Yoon} developed a technique for intrusion detection on embedded systems by analyzing system call frequencies clustered using k-means which groups legitimate system behavior. Observations at run-time that do  not fit into a cluster are considered an anomaly. 
 \par Additionally, anomaly detection on graphs has also been explored. Manzoor et al. \cite{manzoor_fast_2016} proposed a centroid based clustering anomaly detection for instances of streaming heterogeneous graphs in real time. Papadimitriou et al \cite{Papadimitriou2010} proposed five similarity algorithms for comparing the similarity of web graphs. Xie et al. \cite{Xie:2016:UID:2936026.2936232} proposed a provenance-aware intrusion detection and analysis (PIDAS) system using provenance graphs generated from system calls which reveals various interactions between files and processes. 
 %PIDAS consists of three phases: the collection phase in which the provenance of normal system activity is stored in a key-value store database, the detection phase which compares the provenance graph of an executing program with provenance graphs contained in the normal database using a path match algorithm. This algorithm generates a score which is used to determine if a graph is anomalous or benign and the analyzer phase which allows for search of provenance data to determine the point of intrusion. 
-\par Our approach differs from aforementioned prior work because we focus on anomaly detection through information flow sequence of sensor data as represented by provenance graphs. 
+\par Our approach differs from prior work because we focus on anomaly detection through information flow sequence of sensor data as represented by provenance graphs. 
 
 
 %\cite{Noble} proposed two algorithms for anomaly detection in graphs The first approach, looks at unusual substructures in graphs. This is achieved by inverting the subdue score of patterns that occurs frequently in a graph. Subdue is a method for detecting substructures within graphs. The values that produce high scores are flagged as anomalies. The second approach examines unusual subgraphs contained in a graph by iteratively using subdue algorithm to compress the graph. The idea behind this method is that subgraphs containing many common substructures are considered less anomalous than one with less substructures. 
