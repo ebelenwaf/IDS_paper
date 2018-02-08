@@ -149,7 +149,7 @@ A provenance graph is a directed acyclic graph, $p = (V,E)$ where $V$ is a set o
 \begin{center}
 %\includegraphics[width=\textwidth]{vector3.pdf}
 %\includegraphics[width=\textwidth]{vector5.pdf}
-\includegraphics[width=\textwidth]{picture13_edit.pdf}
+\includegraphics[width=\textwidth]{picture13_edit_1.pdf}
 \end{center}
 \caption{Provenance graph conversion to vector space. $u_x, u_y$ represents vectors generated from both provenance graphs}
 \label{prov_vector}
@@ -587,7 +587,7 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 
 \Procedure{GraphtoVector}{$E, E_G$}
 
-\State $n = |E_G|$
+\State $n \gets |E_G|$
 
 \State $Q[k],Q[i] \gets 0, 0 \leq i < n$
 
@@ -624,7 +624,7 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 \State score $\gets 0.0$
 \For{$z_i \in Z$}
 \If{score $> z_i$}
-\State score = $z_i$
+\State score $\gets z_i$
 \EndIf
 \EndFor	
 \State \textbf{return} score
@@ -658,7 +658,7 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 
 \EndFor	
 
-\State $s_{val} = calculateAnomalyScore(Z)$
+\State $s_{val} \gets calculateAnomalyScore(Z)$
 
 \If{ $s_{val} \geq$ threshold}
 \State \textbf{return} normal
@@ -731,7 +731,11 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 \section{Experiment}
 
 The experiment evaluation serves as a preliminary study to confirm the correctness of our theoretical approach in detecting anomalous instances between provenance graphs. We evaluate our intrusion detection algorithm by implementing an IoT application which simulates a climate control system. Climate control systems ensure a proper functional environment for people and machinery. Constant irregularities in temperature could have devastating effects on industrial machinery. This system consists primarily of a heating ventilation and air conditioning (HVAC) system which uses temperature and humidity data to regulate environmental conditions within a building. We utilize a publicly available dataset \cite{LANGEVIN201594} which consists of a year's worth of longitudinal data on the thermal conditions, related behaviors, and comfort of twenty-four occupants in a medium-sized building generated at  a period of fifteen minutes. We utilize the temperature and humidity data as input to our simulation. We generate provenance graphs for each week of the year. We compare the provenance graph generated in consecutive weeks to see how they differ using our graph similarity approach (i.e., week 1 compared to week 2, week 2 compared to week 3 etc.). 
-\par Figure \ref{figure} depicts the cosine similarity between provenance graphs generated from the first occupant by preceding weeks. The rapid decline in the graph is as a result of anomalies between the provenance graphs. This might be as a result of rapid variation in temperature change for each week in the given dataset. \textcolor{red}{Since this dataset does not contain attacks, these spikes would likely be caused by false positives.}
+\par Figure \ref{figure} depicts the cosine similarity between provenance graphs generated from the first occupant by preceding weeks.  \textcolor{red}{ Since the dataset does not contain attacks, these rapid decline would likely indicate false positives. This might also be as a result of rapid variation in temperature change for each week in the given dataset.}
+
+%The rapid decline in the graph is as a result of anomalies between the provenance graphs. This might be as a result of rapid variation in temperature change for each week in the given dataset.  
+
+\textcolor{red}{ Ensuring a proper threshold score is used for detection is an important task that requires extensive knowledge of the application domain. The threshold is manually set to a value which is defined by domain experts. For automatic anomaly threshold detection, one can use prediction methods to define an anomaly score. As an example, a threshold might be set to $0.15$ in which all of the scores below the threshold are considered anomalous.}
 
 \begin{figure}[tb]
 \begin{center}
@@ -783,8 +787,7 @@ There has been a considerable amount of research done on contextualized event-ba
 
 \section{Summary and Conclusion}
 
-In this paper, we propose an anomaly detection algorithm for detecting anomalous instances of sensor based events in an IoT device using provenance graphs. We evaluate our approach with a preliminary study on an IoT application which simulates a climate control system.  \textcolor{red}{
-Current implementation of our anomaly detection algorithm works with offline data. Future work would include implementation for real-time detection. } We also plan on conducting further experimentation to identify the false and true positive rates of our algorithm using select IoT application dataset. 
+In this paper, we propose an anomaly detection algorithm for detecting anomalous instances of sensor based events in an IoT device using provenance graphs. We evaluate our approach with a preliminary study on an IoT application which simulates a climate control system.  \textcolor{red}{Current implementation of our anomaly detection algorithm works with offline data. Future work would include implementation for real-time detection. } We also plan on conducting further experimentation to identify the false and true positive rates of our algorithm using select IoT application dataset. 
 
 
 
