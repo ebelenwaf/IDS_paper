@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 FEB 2018 01:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 FEB 2018 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -420,10 +420,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: picture13_edit_1.pdf Graphic file (type pdf)
 
 <use picture13_edit_1.pdf>
-Package pdftex.def Info: picture13_edit_1.pdf used on input line 152.
+Package pdftex.def Info: picture13_edit_1.pdf used on input line 156.
 (pdftex.def)             Requested size: 516.0pt x 239.19516pt.
 
-Underfull \hbox (badness 1590) in paragraph at lines 250--262
+Underfull \hbox (badness 1590) in paragraph at lines 254--266
 \OT1/ptm/m/n/10 ver-sion of prove-nance graphs. $[]$, and $[]$ which con-
  []
 
@@ -443,7 +443,7 @@ Underfull \vbox (badness 3029) has occurred while \output is active []
  [3 <./picture13_edit_1.pdf>] <foo.pdf, id=238, 508.46524pt x 399.55524pt>
 File: foo.pdf Graphic file (type pdf)
  <use foo.pdf>
-Package pdftex.def Info: foo.pdf used on input line 742.
+Package pdftex.def Info: foo.pdf used on input line 749.
 (pdftex.def)             Requested size: 252.0pt x 198.02736pt.
 
 [4 <./foo.pdf>]) (./bare_conf.bbl)
@@ -484,7 +484,7 @@ texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (5 pages, 325126 bytes).
+Output written on bare_conf.pdf (5 pages, 324400 bytes).
 PDF statistics:
  325 PDF objects out of 1000 (max. 8388607)
  182 compressed objects within 2 object streams
