@@ -136,11 +136,15 @@ Most provenance collection frameworks developed to track provenance use system l
 %\end{figure}
 
 
-A provenance graph is a directed acyclic graph, $p = (V,E)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$ and $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y.value$. Two edges $e_x $ and $e_y$ are similar (denoted $e_x \sim e_y$) if $e_x.v_s \sim e_y.v_s$, $e_x.v_d \sim e_y.v_d$, and $e_x.label = e_y.label$. \textcolor{red}{ We define a union operator over a collection of edge set (denoted by $\cup$) as a set of non-similar edges contained in the edge set. For example, assume $E_i$ and $E_j$ are edge lists, $E_i \cup E_j = \{e_i: e_i \in E_i$ or $e_i \in E_j\}$}. Types may take on one of the following: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g., sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g., read, update, create, delete). $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
+%A provenance graph is a directed acyclic graph, $p = (V,E)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (label, type, value)$ and $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. Two vertices $v_x$, $v_y$ are similar (denoted $ v_x \sim v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y.value$. Two edges $e_x $ and $e_y$ are similar (denoted $e_x \sim e_y$) if $e_x.v_s \sim e_y.v_s$, $e_x.v_d \sim e_y.v_d$, and $e_x.label = e_y.label$. \textcolor{red}{ We define a union operator over a collection of edge set (denoted by $\cup$) as a set of non-similar edges contained in the edge set. For example, assume $E_i$ and $E_j$ are edge lists, $E_i \cup E_j = \{e_i: e_i \in E_i$ or $e_i \in E_j\}$}. Types may take on one of the following: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g., sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g., read, update, create, delete). $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
 
 % A decision point is a logical component of a provenance graph which denotes the evaluation of an action performed on an entity. 
 
 
+
+A provenance graph is a directed acyclic graph, $p = (V,E)$ where $V$ is a set of vertices $V =\{v_1,...,v_n\}$ such that $v_i = (type, value)$ and $E$ is a set of edges $E =\{e_1,..., e_n\}$ where $e_i = (v_s, v_d, label)$ and $v_s, v_d$ are source and destination vertices. Two vertices $v_x$, $v_y$ are equal (denoted $ v_x = v_y$) if $v_x.type = v_y.type$ and $v_x.value = v_y.value$. Two edges $e_x $ and $e_y$ are equal (denoted $e_x = e_y$) if $e_x.v_s = e_y.v_s$, $e_x.v_d = e_y.v_d$, and $e_x.label = e_y.label$.  We use the union operator $\cup$ over edge sets in the usual way of the union of sets.}
+
+Types may take on one of the following: Agent, Entity, and Activity.  An agent is an actor that is represented by an identifier (e.g., sensor or device name). An entity is an event, which represents data that is produced as a result of an activity. An activity is an action performed by an agent or entity (e.g., read, update, create, delete). $label$ takes on one of the following values: \textit{wasGeneratedBy}, \textit{used}, \textit{wasInformedBy}, \textit{wasDerivedFrom}, \textit{wasAttributedTo}, \textit{wasAssociatedWith}, \textit{actedOnBehalfOf}. 
 
 
 
@@ -597,7 +601,8 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 
 \For{$e_g \in E_G \mid 0 \leq g < n$}
 
-\If{$e_j \sim e_g$}
+%\If{$e_j \sim e_g$}
+\If{$e_j = e_g$}
 \State $Q[g] \gets Q[g] + 1$
 %\State \textit{Found} $\gets$ \textbf{True}
 \EndIf
