@@ -84,7 +84,7 @@ Provenance denotes the origin of an object and all other activities that occurre
 \begin{center}
 %\includegraphics[width=\columnwidth]{picture11.pdf}
 %\includegraphics[width=\columnwidth]{picture12.pdf}
-\includegraphics[width=\columnwidth]{picture1_edit.pdf}
+\includegraphics[width=.8\columnwidth]{picture1_edit.pdf}
 \end{center}
 \caption{Components of a provenance graph where nodes represent types (agent, activity, and entity) and edges represent relationships between types}
 \label{Provenance_Sensor}
@@ -155,7 +155,7 @@ Types may take on one of the following: Agent, Entity, and Activity.  An agent i
 %\includegraphics[width=\textwidth]{vector5.pdf}
 \includegraphics[width=\textwidth]{picture13_edit_1.pdf}
 \end{center}
-\caption{Provenance graph conversion to vector space. $u_x, u_y$ represents vectors generated from both provenance graphs and labels are an abstraction of $(type, value)$ tuple. }
+\caption{Provenance graph conversion to vector space. $u_x, u_y$ vectors generated from both provenance graphs. }
 \label{prov_vector}
 \end{figure*}
 
@@ -244,7 +244,6 @@ Types may take on one of the following: Agent, Entity, and Activity.  An agent i
 
 \subsection{Graph Similarity} \label{similarity}
 Similarity is a measure of how identical two objects are, for example, by measuring the angle between objects (using cosine similarity) or a linear distance (using euclidean distance) between the objects. In this work, we use cosine similarity as our similarity metric. This was inspired by the use of information retrieval techniques for query ranking. e.g., given a corpus $D = \{ d_1,..., d_n\}$, and query, $q$, how do we find document(s) $\{d_x,....d_y\}$ which are similar to $q$ and rank them by order of importance. Cosine similarity is a measure of orientation between two non-zero vectors. It measures the cosine of the angle between the vectors. Two vectors which are at an angle of 90$\degree$ have a similarity of 0, two vectors which are identical (with an angle of 0\degree) have a cosine of 1, and two vectors which are completely opposite (with an angle of 180\degree) have a similarity of -1. Since we are concerned with the similarity between vectors, we are only concerned with the positive values bounded in [0,1]. The cosine similarity between two vectors, $X$ and $Y$, is computed by:
-
 \[\mathbf{\cos{(\theta)}} = \dfrac{X \cdot  Y}{ \lVert \mathbf{X} \rVert \cdot \lVert \mathbf{Y} \rVert} =\dfrac{\sum_{i}^n X_i Y_i }{\sqrt[]{\sum_{i}^n X_i^2} \times \sqrt[]{\sum_{i}^n Y_i^2}}  \]
 
 %Algorithm \ref{alg:graph_similarity} describes how to calculate the cosine similarity of two graphs $p_x, p_y$ given their vector representations $u_x, u_y$
@@ -754,7 +753,7 @@ The experiment evaluation serves as a preliminary study to confirm the correctne
 
 \begin{figure}[tb]
 \begin{center}
-\includegraphics[width=\columnwidth]{foo.pdf}
+\includegraphics[width=.8\columnwidth]{foo.pdf}
 \end{center}
 \caption{Provenance graph comparison of climate control system by week.}
 \label{figure}
@@ -785,10 +784,13 @@ The experiment evaluation serves as a preliminary study to confirm the correctne
 
 
 \section{Related Work}
-There has been a considerable amount of research done on contextualized event-based anomaly detection of system call sequence. Liao et al \cite{liao_using_2002} characterizes a system's normal behavior by denoting the frequency of unique system calls which are converted into a vector space representation. A classification algorithm such as $k$-Nearest Neighbors was used to classify the training data set. Stephanie et al. \cite{Hofmeyr} defines a human immune system inspired intrusion detection systems analyzing system call sequences of an application. Yoon et al. \cite{Yoon} developed a technique for intrusion detection on embedded systems by analyzing system call frequencies clustered using k-means which groups legitimate system behavior. Observations at run-time that do  not fit into a cluster are considered an anomaly. 
-\par Additionally, anomaly detection on graphs has also been explored. Manzoor et al. \cite{manzoor_fast_2016} proposed a centroid based clustering anomaly detection for instances of streaming heterogeneous graphs in real time. Papadimitriou et al \cite{Papadimitriou2010} proposed five similarity algorithms for comparing the similarity of web graphs. Xie et al. \cite{Xie:2016:UID:2936026.2936232} proposed a provenance-aware intrusion detection and analysis (PIDAS) system using provenance graphs generated from system calls which reveals various interactions between files and processes. 
+%There has been a considerable amount of research done on contextualized event-based anomaly detection of system call sequence. 
+Liao et al \cite{liao_using_2002} characterize a system's normal behavior by the frequency of unique system calls which are converted into a vector space representation. %A classification algorithm such as $k$-Nearest Neighbors was used to classify the training data set. 
+Stephanie et al. \cite{Hofmeyr} define a human immune system inspired intrusion detection analyzing system call sequences. Yoon et al. \cite{Yoon} developed intrusion detection on embedded systems by analyzing system call frequencies clustered using k-means. %Observations at run-time that do  not fit into a cluster are considered an anomaly. 
+%Additionally, anomaly detection on graphs has also been explored. 
+Manzoor et al. \cite{manzoor_fast_2016} proposed a centroid based clustering anomaly detection for instances of streaming heterogeneous graphs in real time. Papadimitriou et al \cite{Papadimitriou2010} proposed five similarity algorithms for comparing the similarity of web graphs. Xie et al. \cite{Xie:2016:UID:2936026.2936232} proposed a provenance-aware intrusion detection and analysis (PIDAS) system using provenance graphs generated from system calls which reveals interactions between files and processes. 
 %PIDAS consists of three phases: the collection phase in which the provenance of normal system activity is stored in a key-value store database, the detection phase which compares the provenance graph of an executing program with provenance graphs contained in the normal database using a path match algorithm. This algorithm generates a score which is used to determine if a graph is anomalous or benign and the analyzer phase which allows for search of provenance data to determine the point of intrusion. 
-\par Our approach differs from prior work because we focus on anomaly detection through information flow sequence of sensor data as represented by provenance graphs. 
+Our approach differs from prior work because we focus on anomaly detection through information flow sequences of sensor data as represented by provenance graphs. 
 
 
 %\cite{Noble} proposed two algorithms for anomaly detection in graphs The first approach, looks at unusual substructures in graphs. This is achieved by inverting the subdue score of patterns that occurs frequently in a graph. Subdue is a method for detecting substructures within graphs. The values that produce high scores are flagged as anomalies. The second approach examines unusual subgraphs contained in a graph by iteratively using subdue algorithm to compress the graph. The idea behind this method is that subgraphs containing many common substructures are considered less anomalous than one with less substructures. 
