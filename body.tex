@@ -247,7 +247,7 @@ Similarity is a measure of how identical two objects are, for example, by measur
 
 \[\mathbf{\cos{(\theta)}} = \dfrac{X \cdot  Y}{ \lVert \mathbf{X} \rVert \cdot \lVert \mathbf{Y} \rVert} =\dfrac{\sum_{i}^n X_i Y_i }{\sqrt[]{\sum_{i}^n X_i^2} \times \sqrt[]{\sum_{i}^n Y_i^2}}  \]
 
-Algorithm \ref{alg:graph_similarity} describes how to calculate the cosine similarity of two graphs $p_x, p_y$ given their vector representations $u_x, u_y$
+%Algorithm \ref{alg:graph_similarity} describes how to calculate the cosine similarity of two graphs $p_x, p_y$ given their vector representations $u_x, u_y$
 
 %Each graph consist of an edge list which contains all edges contained in the provenance graph.
 
@@ -360,6 +360,87 @@ Algorithm \ref{alg:graph_similarity} describes how to calculate the cosine simil
 Anomaly detection involves the use of rule-based, statistical, clustering or classification techniques to determine normal or anomalous data instances. The process of determining all anomalous instances in a given dataset is a complex task. A major challenge in anomaly detection is providing the right feature set from the data to use for detection. Another challenge exists in defining what constitutes as normal system behavior. Most anomaly detection using point-based data often fail to include the dependencies that exist between data points. 
 
 \par Due to the ubiquitous nature of IoT devices, there are a wide array of vulnerabilities associated with them. In designing our anomaly detection framework, we expect an attacker's footprint is reflected through the data flow as depicted in the provenance graph. Our algorithm detects attacks such as false data injection, and state change as depicted in information flow of sensor events in provenance graphs.
+
+\begin{algorithm}[h!]  
+\caption{Graph to vector conversion.} 
+ \label{graph_to_vector} 
+\begin{algorithmic}[1]
+
+\Procedure{GraphtoVector}{$E, E_G$}
+
+\State $n \gets |E_G|$
+
+\State $Q[k],Q[i] \gets 0, 0 \leq i < n$
+
+\For{$e_j \in E$}
+
+%\State \textit{Found} $\gets$ \textbf{False}
+
+\For{$e_g \in E_G \mid 0 \leq g < n$}
+
+%\If{$e_j \sim e_g$}
+\If{$e_j = e_g$}
+\State $Q[g] \gets Q[g] + 1$
+%\State \textit{Found} $\gets$ \textbf{True}
+\EndIf
+
+\EndFor
+
+\EndFor
+
+
+\State \textbf{return} $Q$
+
+\EndProcedure
+
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[h!]
+
+\caption{Detection algorithm given an observation phase graph set, $P$, a detection phase graph, $p$, and a $threshold$.} 
+ \label{alg:graph_anomaly} 
+
+\begin{algorithmic}[1]  
+
+\Procedure{GraphAnomaly}{$P,p,threshold$}
+
+\State \textbf{INPUT: } $P=\{p_0,...,p_n\} \mid p_i\gets (V_i, E_i), 0 \leq i \leq n.$
+
+%\State $E_G \gets \{\}$
+%\For{$p_i = (V_i, E_i) \in P, 0 \leq i \leq n$}
+\State $E_G \gets \cup_{i=0}^{n} E_i$
+
+\State $Q \gets GraphtoVector(p, E_G)$ 
+
+\State $Z \gets \{\}$
+
+\For{$p_i \in P$}
+\State $N_i \gets GraphtoVector(p_i, E_G)$
+
+\State $z \gets Cosine\_Similarity(Q, N_i)$
+
+\State $Z \gets Z \cup z_i$
+
+\EndFor	
+
+\State $s_{val} \gets min(Z)$
+
+\If{ $s_{val} \geq$ threshold}
+\State \textbf{return} normal
+
+\EndIf
+
+\State \textbf{return} anomaly
+\EndProcedure
+
+
+
+\end{algorithmic}
+
+
+
+\end{algorithm}
 
 \par Many IoT devices implement a control systems in which sensor data is used as an input in a feedback loop to an actuator. The operations of most control systems are regular and predictable. For example, in a thermostat application, temperature readings generated might be converted from Celsius to Fahrenheit and utilized as feedback to an actuator. Each iteration of a control loop sequence generates a path in a provenance graph. This notion can be leveraged to define an expected provenance graph for each application. 
 \par The expected regularity of provenance graphs in IoT applications motivates a supervised learning approach to anomaly detection. This approach consists of two phases: observation phase, also known as the training phase, and the detection or test phase. In the observation phase, the system collects provenance data considered to be a representation of the normal system behavior. In the detection phase, the provenance graph set is compared with the provenance graph derived from subsequent observations to determine if an anomaly exists by measuring similarity between this graph and the provenance graph set. Note that provenance graphs from the observation and detection phase form a graph set. A global edge set, $E_G$ represents the union of edge sets contained in a graph set. Algorithm \ref{alg:graph_anomaly} is the graph anomaly detection function given an observation phase graph set, $P$, and a detection phase graph, $p$. $Z$ represents a list of the cosine scores from comparing each of the provenance graphs in the observation phase graph set with a detection phase graph. A  function, $calculateAnomalyScore$ is used to determine the anomaly score, which is based on the minimum cosine similarity score of elements contained in $Z$.
@@ -494,58 +575,58 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 
 %\[sim(u_x,u_y) =  \dfrac{u_x \cdot  u_y}{ \lVert \mathbf{u_x} \rVert \cdot \lVert \mathbf{u_y} \rVert} =\dfrac{\sum_{i=1}^n u_{xi} u_{yi} }{\sqrt[]{\sum_{i=1}^n u_{xi}^2} \times \sqrt[]{\sum_{i=1}^n u_{yi}^2}}  \in [0,1] \]
 
-\begin{algorithm}
-\caption{Cosine similarity given two vectors.}
- \label{alg:graph_similarity}
- 
-\begin{algorithmic}[1]
-
-\Procedure{sim}{$u_x,u_y$}
-\State \textbf{INPUT: } $u_x=\{u_{x_0},...,u_{x_n}\},u_y=\{u_{y_0},...,u_{y_n}\}$
-\State $S_p, S_{u_x}, S_{u_y} \gets$ 0
-%\State $S_{ux} \gets$ 0
-%\State $S_{uy} \gets$ 0
-\For{$ 0 \leq i \leq n$}
-
-\State $S_p \gets S_p + (u_x[i] \times u_y[i])$
-\State $ S_{u_x} \gets  S_{u_x} + u_x[i]^2$
-\State $S_{u_y} \gets S_{u_y} + u_y[i]^2$
-
-\EndFor
-
-\State $G \gets \dfrac{S_p}{\sqrt[]{S_{u_x}} \times \sqrt[]{S_{u_y}} }$
-
-%\State $G \gets S_p \div \sqrt[]{S_{ux} \times S_{uy}}$
-
-\State \textbf{return} $G$
-
-\EndProcedure
-
-\end{algorithmic}
-
-\end{algorithm}
-
-\begin{algorithm}
-\caption{Algorithm to construct the global edge set}
-
-\begin{algorithmic}[1]  
-\caption{Construction of global edge set from a set of provenance graphs.}
-\label{graph_to_globaledgelist}
-
-\Procedure{GraphSetToGlobalEdgeSet}{$P$}
-\State \textbf{INPUT: } $P=\{p_0,...,p_n\} \mid p_i\gets (V_i, E_i), 0 \leq i \leq n.$
-
-%\State $E_G \gets \{\}$
-%\For{$p_i = (V_i, E_i) \in P, 0 \leq i \leq n$}
-\State $E_G \gets \cup_{i=0}^{n} E_i$
-
+%\begin{algorithm}
+%\caption{Cosine similarity given two vectors.}
+% \label{alg:graph_similarity}
+% 
+%\begin{algorithmic}[1]
+%
+%\Procedure{sim}{$u_x,u_y$}
+%\State \textbf{INPUT: } $u_x=\{u_{x_0},...,u_{x_n}\},u_y=\{u_{y_0},...,u_{y_n}\}$
+%\State $S_p, S_{u_x}, S_{u_y} \gets$ 0
+%%\State $S_{ux} \gets$ 0
+%%\State $S_{uy} \gets$ 0
+%\For{$ 0 \leq i \leq n$}
+%
+%\State $S_p \gets S_p + (u_x[i] \times u_y[i])$
+%\State $ S_{u_x} \gets  S_{u_x} + u_x[i]^2$
+%\State $S_{u_y} \gets S_{u_y} + u_y[i]^2$
+%
 %\EndFor
-\State \textbf{return} $E_G$
+%
+%\State $G \gets \dfrac{S_p}{\sqrt[]{S_{u_x}} \times \sqrt[]{S_{u_y}} }$
+%
+%%\State $G \gets S_p \div \sqrt[]{S_{ux} \times S_{uy}}$
+%
+%\State \textbf{return} $G$
+%
+%\EndProcedure
+%
+%\end{algorithmic}
+%
+%\end{algorithm}
 
-\EndProcedure
-
-\end{algorithmic}
-\end{algorithm}
+%\begin{algorithm}
+%\caption{Algorithm to construct the global edge set}
+%
+%\begin{algorithmic}[1]  
+%\caption{Construction of global edge set from a set of provenance graphs.}
+%\label{graph_to_globaledgelist}
+%
+%\Procedure{GraphSetToGlobalEdgeSet}{$P$}
+%\State \textbf{INPUT: } $P=\{p_0,...,p_n\} \mid p_i\gets (V_i, E_i), 0 \leq i \leq n.$
+%
+%%\State $E_G \gets \{\}$
+%%\For{$p_i = (V_i, E_i) \in P, 0 \leq i \leq n$}
+%\State $E_G \gets \cup_{i=0}^{n} E_i$
+%
+%%\EndFor
+%\State \textbf{return} $E_G$
+%
+%\EndProcedure
+%
+%\end{algorithmic}
+%\end{algorithm}
 
 
 %%% copied algorithm
@@ -584,102 +665,29 @@ Anomaly detection involves the use of rule-based, statistical, clustering or cla
 %\end{algorithm}
 
 
-\begin{algorithm}[h!]  
-\caption{Graph to vector conversion.} 
- \label{graph_to_vector} 
-\begin{algorithmic}[1]
-
-\Procedure{GraphtoVector}{$E, E_G$}
-
-\State $n \gets |E_G|$
-
-\State $Q[k],Q[i] \gets 0, 0 \leq i < n$
-
-\For{$e_j \in E$}
-
-%\State \textit{Found} $\gets$ \textbf{False}
-
-\For{$e_g \in E_G \mid 0 \leq g < n$}
-
-%\If{$e_j \sim e_g$}
-\If{$e_j = e_g$}
-\State $Q[g] \gets Q[g] + 1$
-%\State \textit{Found} $\gets$ \textbf{True}
-\EndIf
-
-\EndFor
-
-\EndFor
 
 
-\State \textbf{return} $Q$
-
-\EndProcedure
-
-\end{algorithmic}
-\end{algorithm}
-
-\begin{algorithm}[h!] 
-\caption{Calculates an anomaly score given a set of cosine similarity values.}  
- \label{alg:min_func} 
-\begin{algorithmic}[1]  
-
-\Procedure{calculateAnomalyScore}{$Z$}
-\State \textbf{INPUT: } $Z=\{z_0,...,z_n\} , 0 \leq i \leq n.$
-\State score $\gets 0.0$
-\For{$z_i \in Z$}
-\If{score $> z_i$}
-\State score $\gets z_i$
-\EndIf
-\EndFor	
-\State \textbf{return} score
-\EndProcedure
-
-\end{algorithmic}
-\end{algorithm}
-
-
-\begin{algorithm}[h!]
-
-\caption{Detection algorithm given an observation phase graph set, $P$, a detection phase graph, $p$, and a $threshold$.} 
- \label{alg:graph_anomaly} 
-
-\begin{algorithmic}[1]  
-
-\Procedure{GraphAnomaly}{$P,p,threshold$}
-
-\State $E_G \gets GraphSetToGlobalEdgeSet(P \cup p)$
-
-\State $Q \gets GraphtoVector(p, E_G)$ 
-
-\State $Z \gets \{\}$
-
-\For{$p_i \in P$}
-\State $N_i \gets GraphtoVector(p_i, E_G)$
-
-\State $z \gets SIM(Q, N_i)$
-
-\State $Z \gets Z \cup z_i$
-
-\EndFor	
-
-\State $s_{val} \gets calculateAnomalyScore(Z)$
-
-\If{ $s_{val} \geq$ threshold}
-\State \textbf{return} normal
-
-\EndIf
-
-\State \textbf{return} anomaly
-\EndProcedure
+%\begin{algorithm}[h!] 
+%\caption{Calculates an anomaly score given a set of cosine similarity values.}  
+% \label{alg:min_func} 
+%\begin{algorithmic}[1]  
+%
+%\Procedure{calculateAnomalyScore}{$Z$}
+%\State \textbf{INPUT: } $Z=\{z_0,...,z_n\} , 0 \leq i \leq n.$
+%\State score $\gets 0.0$
+%\For{$z_i \in Z$}
+%\If{score $> z_i$}
+%\State score $\gets z_i$
+%\EndIf
+%\EndFor	
+%\State \textbf{return} score
+%\EndProcedure
+%
+%\end{algorithmic}
+%\end{algorithm}
 
 
 
-\end{algorithmic}
-
-
-
-\end{algorithm}
 
 
 
